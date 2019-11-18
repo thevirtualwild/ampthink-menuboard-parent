@@ -24,23 +24,57 @@ function inventory_types_taxonomy() {
     );
 
     wp_insert_term(
-      'Non Alcoholic', // the term
+      'Combo', // the term
       'inventory_type', // the taxonomy
       array(
-        'description'=> 'Default items as non alcoholic.',
-        'slug' => 'non_alcoholic'
+        'description'=> 'This item contains other items.',
+        'slug' => 'combo'
       )
     );
     wp_insert_term(
-      'Alcoholic', // the term
+      'Alcohol', // the term
       'inventory_type', // the taxonomy
       array(
         'description'=> 'This is an alcoholic item.',
-        'slug' => 'alcoholic'
+        'slug' => 'alcohol'
       )
     );
 }
 add_action( 'init', 'inventory_types_taxonomy');
+// Custom Taxonomies
+function menuboard_types_taxonomy() {
+    register_taxonomy(
+        'menuboard_type',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+        'menu_boards', //post type name
+        array(
+            'hierarchical' => true,
+            'label' => 'Menu Board Type',  //Display name
+            'query_var' => true,
+            'rewrite' => array(
+                'slug' => 'menu_boards', // This controls the base slug that will display before each term
+                'with_front' => false // Don't display the category base before
+            )
+        )
+    );
+
+    wp_insert_term(
+      'Classic', // the term
+      'menuboard_type', // the taxonomy
+      array(
+        'description'=> 'This is a classic menuboard.',
+        'slug' => 'classic'
+      )
+    );
+    wp_insert_term(
+      'Portable', // the term
+      'menuboard_type', // the taxonomy
+      array(
+        'description'=> 'This is a portable menuboard.',
+        'slug' => 'portable'
+      )
+    );
+}
+add_action( 'init', 'menuboard_types_taxonomy');
 
 
 /**---   Post Types  ---**/
@@ -104,8 +138,8 @@ function create_menuboard_posttype() {
             'rewrite' => array('slug' => 'menu_boards'),
 	        'hierarchical'        => false,
 	        'capability_type'     => 'page',
-	        'taxonomies'          => array( '' ),
-	        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+	        'taxonomies'          => array( 'menuboard_type' ),
+	        'supports' => array( 'title', 'editor', 'thumbnail' ),
         )
     );
 }
@@ -142,6 +176,40 @@ function create_ad_posttype() {
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_ad_posttype' );
+
+
+
+function create_device_posttype() {
+
+    register_post_type( 'devices',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Devices' ),
+                'singular_name' => __( 'Device' ),
+                'add_new_item' => __( 'Add New Device' ),
+                'edit_item' => __( 'Edit Devices' ),
+                'new_item' => __( 'New Device' ),
+                'view_item' => __( 'View Device' ),
+                'view_items' => __( 'View Devices' ),
+                'search_items' => __( 'Search Devices' ),
+                'not_found' => __( 'Device Not Found' ),
+                'not_found_in_trash' => __( 'Device Not Found in Trash' ),
+                'all_items' => __( 'All Devices' )
+            ),
+            'description' => __( 'Devices with designated Menu Boards to be shown'),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'devices'),
+	        'hierarchical'        => false,
+	        'capability_type'     => 'page',
+	        'taxonomies'          => array( '' ),
+	        'supports' => array( 'title', 'thumbnail' ),
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_device_posttype' );
 
 
 
@@ -209,4 +277,4 @@ function save_brand_options() {
 
 }
 
-add_action('acf/save_post', 'save_brand_options', 20);
+// add_action('acf/save_post', 'save_brand_options', 20);
