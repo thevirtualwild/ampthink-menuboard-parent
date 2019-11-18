@@ -11,6 +11,12 @@ A Few Things to Note:
 * Development Server Located at `http://18.211.236.134.xip.io/` and located on the `dev` branch.
 * Production Server Located at `http://3.229.112.134.xip.io/` and located on the `master` branch.
 
+To access overall network:
+
+* Network Dashboard can be found at `/wp-admin/network/`.
+* Plugins at `/wp-admin/network/plugins.php`.
+* Themes at `/wp-admin/network/themes.php`
+
 Getting Started
 ---------------
 
