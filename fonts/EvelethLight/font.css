@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'EvelethLight';
+  src: url('EvelethLight.eot');
+  src: url('EvelethLight.eot?#iefix') format('embedded-opentype'),
+       url('EvelethLight.svg#EvelethLight') format('svg'),
+       url('EvelethLight.ttf') format('truetype'),
+       url('EvelethLight.woff') format('woff'),
+       url('EvelethLight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

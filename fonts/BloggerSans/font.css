@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('BloggerSans-Medium.eot');
+  src: url('BloggerSans-Medium.eot?#iefix') format('embedded-opentype'),
+       url('BloggerSans-Medium.svg#BloggerSans-Medium') format('svg'),
+       url('BloggerSans-Medium.ttf') format('truetype'),
+       url('BloggerSans-Medium.woff') format('woff'),
+       url('BloggerSans-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('BloggerSans-LightItalic.eot');
+  src: url('BloggerSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('BloggerSans-LightItalic.svg#BloggerSans-LightItalic') format('svg'),
+       url('BloggerSans-LightItalic.ttf') format('truetype'),
+       url('BloggerSans-LightItalic.woff') format('woff'),
+       url('BloggerSans-LightItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}

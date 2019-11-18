@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Clarendon-Bold';
+  src: url('Clarendon Bold.eot');
+  src: url('Clarendon Bold.eot?#iefix') format('embedded-opentype'),
+       url('Clarendon Bold.woff2') format('woff2');
+  src: url('ClarendonBT-Bold.svg#ClarendonBT-Bold') format('svg'),
+       url('ClarendonBT-Bold.ttf') format('truetype'),
+       url('ClarendonBT-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

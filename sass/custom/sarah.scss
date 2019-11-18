@@ -1,0 +1,57 @@
+#feature-right-menu #featured-item-slider.right{
+	 width: 738px;
+}
+
+
+#feature-left-combos-menu{
+	#featured-item-slider.left{
+	width:938px;
+}
+
+	#menu-list.right{
+		width:938px;
+	}
+}
+
+.header-inner #text-container{
+	    max-width: 924px !important;
+}
+
+
+p {
+    margin: 0;
+    color: $color-red;
+    font-size: 50px;
+	letter-spacing: -1px;
+	padding-right: 80px;
+	line-height:1.1;
+   	font-family:$font__main;
+	word-wrap: break-word;
+}
+
+/////recent add to game clock
+
+#game-info .left{
+	float:left !important;
+}
+
+#game-info #timer #quarter{
+	padding-left:10px !important;
+}
+
+
+
+
+//front-page
+
+.no-results.not-found {
+    max-width: 800px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.no-results.not-found header.page-header {
+    height: auto;
+    margin-bottom: 40px;
+    font-size: 40px;
+}

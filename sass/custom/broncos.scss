@@ -1,0 +1,2546 @@
+//colors
+$color_rangitoto_approx: #2d2a22;
+$color_soya_bean_approx: #665f58;
+$white: #fff;
+
+//fonts
+$font_0: "BloggerSans" !important;
+$font_1: "LIBRARY3AM" !important;
+$font_2: "BigNoodleTitling" !important;
+$font_gotham: "Gotham-Book" !important;
+$font_eveleth: "EvelethThin" !important;
+$font_thick_eveleth: "EvelethLight" !important;
+$font_belinda: "Belinda" !important;
+$font_din: "DIN-Bold" !important;
+$font_din_condensed: "DIN-Bold-Condensed" !important;
+$font_din_norm: "DIN" !important;
+$font_din_condensed_norm: "DIN-Condensed" !important;
+$font_mogra: "Mogra" !important;
+$font_clarendon: "Clarendon-Bold" !important;
+
+$border_green: #5bc64f;
+$border_orange: #d8491d;
+$border_yellow: #f4bd22;
+$border_blue: #1b84db;
+
+
+$text_blue: #2773ac;
+$text_orange: #ee5624;
+$tlc_red: #ee3f4c;
+$broncos_navy: #0d2345;
+
+$bright_blue: #8C9CF5;
+
+
+$broncos_banner: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/broncos-banner.jpg');
+
+$disclaimer-price-size: 28px;
+
+//@extend-elements
+//original selectors
+//.postid-371 .left .featured-menu-item .price, .postid-371 .left .featured-menu-item .calories
+%extend_1 {
+	font-family: $font_0;
+	font-size: $disclaimer-price-size; /*was 45px*/
+	// line-height: 50px;
+}
+
+header {
+	display: none !important;
+}
+.has-header header {
+	display: block !important;
+}
+
+
+
+
+
+.product_id-spacer {
+    visibility: hidden !important;
+}
+
+
+.disclaimer {
+	position: absolute;
+	padding-bottom: 20px;
+	font-size: 18px; //was 45px;
+	line-height:24px;
+	padding-right: 20px;
+	bottom:0;
+	font-family: $font_0;
+	padding-left: 10px;
+}
+
+#menu-container {
+	background-size: cover !important;
+}
+
+.archive header {
+	display: block !important;
+}
+
+
+
+body.chrome-45 {
+	#grid-container .quadrant.quadrant-with-items .with-item-container .with-item-info,
+	#top-bottom-half-feature .quadrant.quadrant-with-items .with-item-container .with-item-info {
+		margin-top: 70px !important;
+		margin-left: -240px !important;
+	}
+
+	#grid-container .quadrant.quadrant-with-items .with-item-container:nth-child(even) .with-item-info,
+	#top-bottom-half-feature .quadrant.quadrant-with-items .with-item-container:nth-child(even) .with-item-info {
+		margin-top: 200px !important;
+		margin-left: -230px !important;
+	}
+	#layout-012-bbq {
+		.left .disclaimer {
+	    display: inline-block;
+	    text-align: left;
+	    margin-left: 230px;
+		}
+	}
+}
+
+
+#menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper , .menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper {
+
+	.happy-hour-title {
+		font-family: $font_1;
+		font-size: 49px;
+		color: $text_orange;
+		margin: 0;
+		line-height: 1.5;
+		position: absolute;
+		top: 30px;
+		margin-bottom:20px;
+	}
+}
+
+
+#menu-list, .menu-list {
+	flex: 1;
+
+	.sold_out {
+		display: none !important;
+	}
+
+	.menu-item-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+		align-items: baseline;
+		.price, .calories {
+		    font-size: $disclaimer-price-size;
+		}
+		.price *, .calories * {
+		    font-size:  $disclaimer-price-size !important;
+		}
+	}
+
+	.price {
+	    text-align: right;
+	    flex: 1;
+	}
+
+	.calories {
+	    flex: 2;
+	    text-align: right;
+	}
+
+	h1.display-title {
+	    flex: 5; // was flex: 3
+
+			display: flex !important;
+			align-items: center;
+
+			.display-icon {
+				max-height: 40px;
+				max-width: 50px;
+				transform: translateY(-5px);
+			}
+			.subtitle {
+				margin-left: 10px;
+				font-family: $font_0;
+				font-size: .7em !important;
+				font-style: italic;
+			}
+	}
+
+	.list-of-menu-items li.menu_item .menu-item-info-wrapper {
+		* {
+			@extend %extend_1;
+			color: $text_blue;
+		}
+	}
+
+	h1.menu-list-title, .happy-hour-title {
+		font-family: $font_1;
+		font-size: 49px;
+		color: $text_orange;
+		margin: 0;
+		line-height: 1.5;
+
+		.subtitle {
+			font-family: $font_0;
+			font-style: italic;
+			font-weight: 300;
+			font-size: .5em;
+			color: $white;
+			margin-left: 0;
+			display: block;
+			margin-bottom: 20px;
+			margin-top: -10px;
+
+			height: 45px;
+		}
+	}
+
+	ul li.menu_item {
+		margin-bottom:10px;
+	}
+
+}
+
+.menu-container {
+	height: 100%;
+}
+
+#grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	max-height:100%;
+	position: relative;
+
+	.quadrant {
+		width: 50%;
+		flex-basis: 50%;
+	}
+}
+#grid-container, #top-bottom-half-feature{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	max-height:100%;
+	position: relative;
+
+	.quadrant {
+		height: 520px;
+		padding:10px;
+		min-height: 50%;
+		max-height:50%;
+		position:relative;
+
+		.quadrant-wrap {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			position: relative;
+
+			border: 1px solid #1b84db;
+			border-radius: 1px;
+			height: 100%;
+
+			overflow: hidden;
+
+			&> * {
+		    margin-top: 40px;
+				flex: 1;
+			}
+
+			.item-text {
+				padding: 15px;
+				// margin-top: 0;
+
+				position: absolute;
+				width: 50%;
+				align-self: flex-start;
+				margin: 10px;
+				margin-top: 15px;
+				z-index: 5;
+
+				img.display-icon {
+						height: 72px;
+						margin-top: -15px;
+				}
+
+				.featured_display_title {
+					font-family: $font_2;
+					font-size: 128px;
+					color: $white;
+					margin:0;
+					margin-bottom: -18px;
+					z-index: 1;
+				}
+
+				.featured_display_subtitle {
+					font-size: 53px;
+					font-family: 'bigNoodleTitling';
+					color: $text_orange;
+					z-index: 5;
+					position: relative;
+					margin-bottom: -28px !important;
+
+					.subtitle-text {
+						display: inline-block;
+					}
+				}
+			}
+			.flex-image-wrapper {
+				position:relative;
+				flex: 2;
+				text-align: right;
+				margin-left: -20px;
+				margin-bottom: -20px;
+				max-height: 400px !important;
+				height: 100%;
+
+				img.featured-item-image {
+			    max-height: 400px;
+				}
+			}
+		}
+
+		&.quadrant-basic {
+			.quadrant-wrap {
+				border-color: $border_blue;
+				justify-content: flex-end;
+
+				&> * {
+					flex: initial;
+				}
+
+				.item-text {
+					margin:0;
+					background:none;
+					width: 100%;
+					display: flex;
+
+					img.display-icon {
+							height: 60px;
+							margin-top: 5px;
+							margin-left:-15px;
+					}
+
+					.featured_display_title {
+						font-family: $font_2;
+						font-size: 90px !important; //was 100px;
+						line-height: 90px !important;
+						color: $white;
+						display: flex;
+
+						.plus-icon {
+							font-size: 60px;
+							color: $text_orange;
+						}
+					}
+					.featured_display_subtitle {
+						color: $text_orange;
+						font-size: 90px; //was 100px;
+						line-height: 90px;
+					}
+
+				}
+
+				.flex-image-wrapper {
+					max-height: 480px;
+					flex: 1;
+
+					img {
+						object-fit: contain;
+						object-position: bottom left;
+						max-height: inherit;
+						height: auto;
+					}
+				}
+
+				.item-info {
+					color: $text_blue;
+					font-size: 60px;
+					font-family: $font_2;
+					width: auto;
+					text-align: right;
+					margin-bottom:10px;
+					margin-top:0;
+					margin-right: 20px;
+					flex: initial;
+
+					* {
+						font-family: $font_2;
+					}
+				}
+			}
+
+			&.sold_out {
+				.quadrant-wrap {
+					background:$broncos_banner;
+					background-size: cover !important;
+
+					background-position: center;
+					* {
+				    visibility: hidden;
+					}
+
+          &:before {
+            display:none;
+          }
+				}
+			}
+		}
+		&.quadrant-with-items {
+			&.sold_out {
+				.quadrant-wrap {
+					background:$broncos_banner;
+					background-size: cover !important;
+
+					background-position: center;
+					* {
+				    visibility: hidden;
+					}
+
+          &:before {
+            display:none;
+          }
+				}
+			}
+
+			.flex-image-wrapper {
+				height: 100%;
+				margin-right: -20px;
+				z-index: 3;
+				max-height: 360px;
+				margin-top:0;
+
+				img {
+					max-height: 100%;
+					height: 100%;
+					object-fit: contain;
+					object-position: bottom left;
+				}
+			}
+			.with-item-container {
+				align-items: center;
+	    	-webkit-align-items: center;
+				justify-content: center;
+				position: relative;
+				display: flex;
+				margin-top:0 !important;
+				// padding-bottom:40px;
+				height: 100%;
+				padding-top: 40px;
+
+				&.sold_out {
+					visibility: hidden;
+					// display: none;
+				}
+
+				.with-item-image {
+					max-height: 100%;
+					height: 100%;
+
+					z-index: 1;
+
+					img.featured-item-image {
+						max-height: 425px;
+						height: 100%;
+
+						z-index: inherit;
+					}
+				}
+				.with-item-info {
+					position: absolute;
+					font-family: $font_0;
+					color: $white;
+					font-size: 28px;
+					background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/gfx-with-info-background.png');
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+					text-align: right;
+
+					padding: 40px 10px 10px 20px;
+					margin-left: -12px;
+			    margin-top: -60px;
+
+
+					z-index: 5;
+
+					.plus-icon {
+						width:40px;
+						height:40px;
+						position: absolute;
+						top:30px;
+						left: 10px;
+
+						z-index: inherit;
+					}
+
+					.calories, .price {
+						// font-size: 26px;
+
+						z-index: inherit;
+					}
+				}
+
+				&:nth-child(even) {
+					margin-bottom: 20px;
+
+					.with-item-image, .with-item-image img.featured-item-image {
+						max-height: 460px;
+					}
+
+					.with-item-info {
+						margin-top: 80px;
+						margin-left: 1px;
+
+						&:before {
+					    content: '';
+					    display: block;
+					    height: 40px;
+					    width: 40px;
+					    position: absolute;
+					    left: -40px;
+							margin-top: 15px;
+							background:url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/gfx-arrow-or-white.png');
+							background-repeat: no-repeat;
+							background-size:contain;
+							background-position: center;
+						}
+					}
+				}
+			}
+
+			.item-text {
+				&:before {
+					background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/broncos-dashed-with-arrow.png');
+					background-size:430px 200px;
+					background-position: bottom;
+					background-repeat: no-repeat;
+					margin-right: 20px;
+
+					content:'';
+					display:block;
+					position:absolute;
+					top: 0;
+					bottom:0;
+					left:0;
+					right:0;
+				}
+
+				.featured_display_title {
+					font-size: 100px;
+					margin-bottom: -10px;
+				}
+			}
+		}
+		&.quadrant-with-featured {
+			&.sold_out {
+				.quadrant-wrap {
+					background:$broncos_banner;
+					background-size: cover !important;
+
+					background-position: center;
+					* {
+				    visibility: hidden;
+					}
+
+          &:before {
+            display:none;
+          }
+				}
+			}
+			.quadrant-wrap > * {
+				margin-top:0;
+				height: 100%;
+
+				img {
+					height:100%;
+				}
+			}
+			.featured-image-wrapper {
+				flex: 2;
+				z-index: 5;
+			}
+			.both-with-items {
+				flex: 2;
+				display: flex;
+
+				&> * {
+					margin-top:0;
+					height: 100%;
+				}
+
+				.with-item-container {
+			    align-items: center;
+			    justify-content: center;
+			    position: relative;
+			    display: flex;
+					margin-top:0 !important;
+					margin-bottom:0px !important;
+					flex: 1;
+
+					.with-item-image {
+						height: 100%;
+						max-height:100%;
+						padding:20px;
+
+						img.featured-item-image {
+							height: 100%;
+							object-fit: contain;
+							object-position: center;
+						}
+					}
+
+					.with-item-info {
+						position: absolute;
+						font-family: $font_0;
+						color: $white;
+						font-size: 28px;
+						background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/gfx-with-info-background.png');
+						background-size: 100% 130%;
+						background-repeat: no-repeat;
+						background-position: bottom left;
+						text-align: right;
+
+						padding: 10px 10px 10px 20px;
+						margin-left: 2%;
+						width: auto;
+						min-width: 226px;
+						margin-top: 0px;
+						margin-bottom:20px;
+						bottom:0;
+						margin-left: -226px;
+
+						.plus-icon {
+							width:40px;
+							height:40px;
+							position: absolute;
+							top:30px;
+							left: 10px;
+						}
+
+						// .calories, .price {
+						// 	font-size: 26px;
+						// }
+					}
+				}
+			}
+		}
+		&.quadrant-take-home {
+			.quadrant-wrap {
+				display: flex;
+				background:url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/BG-take-home-game-with-background.jpg');
+				background-size:cover;
+				padding: 20px;
+				position:relative;
+
+				.flex-image-wrapper {
+					visibility: hidden;
+				}
+
+				.take-home-item {
+				    display: flex;
+				    align-items: flex-end;
+				    position: relative;
+						height: 100%;
+
+						&.sold_out {
+							visibility: hidden;
+						}
+
+						.with-item-image {
+							z-index: 5;
+							height: 100%;
+
+							img {
+								height: 100%;
+								object-position: bottom;
+								object-fit: contain;
+							}
+						}
+
+						.with-item-info {
+							bottom: 20px;
+							position: absolute;
+					    width: 230px;
+					    text-align: center;
+					    font-family: $font_0;
+					    font-size: 36px;
+					    color: $broncos_navy;
+
+							background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/gfx-souvenir-price-bg.png');
+							background-size: 100% 100%;
+
+							.title-container {
+							    padding: 10px;
+							}
+
+							.info-container {
+							    display: flex;
+							    justify-content: center;
+							    align-items: center;
+									color: $text_orange;
+							    font-size: 18px;
+							    padding: 10px;
+
+									.calories {
+									    margin-right: 10px;
+									}
+
+									.price-num {
+									    margin-left: 10px;
+									    font-family: $font_0;
+									}
+							}
+						}
+
+
+						&:nth-child(even) .with-item-info {
+					    right: -175px;
+
+							-webkit-clip-path: polygon(0 100%, 90% 100%, 100% 0%, 0% 0%);
+						  clip-path: polygon(0 100%, 88% 100%, 100% 0%, 0% 0%);
+
+							.info-container {
+								background: $broncos_navy;
+							}
+						}
+
+						&:nth-child(odd) .with-item-info {
+					    left: -175px;
+
+							-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0%, 10% 0%);
+						  clip-path: polygon(0 100%, 100% 100%, 100% 0%, 12% 0%);
+
+							.title-container {
+						    background: $broncos_navy;
+								color: $white !important;
+							}
+						}
+				}
+			}
+		}
+
+		&.quadrant-basic.product_id-1081785 {
+			.quadrant-wrap {
+				.featured_display_title {
+			    font-size: 89px !important;
+				}
+				.item-text {
+				  flex-direction: column;
+				}
+				.plus-icon {
+				  display: none;
+				}
+				.featured_display_subtitle {
+				  text-align: right;
+					font-family: $font_belinda;
+			    text-transform: initial;
+			    font-size: 80px;
+			    margin-top: 10px;
+			    margin-right: 10px;
+				}
+				.flex-image-wrapper {
+				  max-height:400px !important;
+
+					img {
+						height: 100%;
+					}
+				}
+				span.highlight {
+				  color: $text_orange;
+				  margin-right:10px;
+				}
+
+				img.display-icon {
+				  object-fit: contain;
+				  position: absolute;
+				  bottom: -300px;
+				  left: 50px;
+				  height: 100px !important;
+				}
+			}
+		}
+	}
+}
+
+
+.inline-subtitles {
+	.menu-list-title, .happy-hour-title {
+		.subtitle {
+			display:inline-block !important;
+			margin-left: 20px;
+			font-size: .7em !important;
+		}
+		.calories-tag {
+			display: none;
+		}
+	}
+}
+// .layout-016 .menu-list ul li.menu_item *, .layout-016 #menu-list ul li.menu_item *
+
+
+
+
+.layout-009,
+.layout-010-redzone,
+.layout-012-bbq,
+.layout-013-tlc,
+.layout-014,
+.layout-015,
+.layout-016,
+.layout-017,
+.layout-018 {
+	.price-num {
+		font-family: $font_0;
+	}
+}
+
+
+
+
+
+
+
+.layout-010-redzone {
+
+	#grid-container {
+
+		.quadrant {
+
+			&:nth-child(1) .quadrant-wrap {
+				border-color: $border_green;
+			}
+			&:nth-child(2) .quadrant-wrap {
+				border-color: $border_yellow;
+			}
+			&:nth-child(3) .quadrant-wrap {
+				border-color: $border_orange;
+			}
+			&:nth-child(4) .quadrant-wrap {
+				border-color: $border_blue;
+			}
+
+			.featured_display_title {
+				color: $white;
+			}
+
+		}
+
+	}
+}
+
+.layout-012-bbq {
+	display: flex !important;
+	flex-direction: row;
+
+	.left {
+		width: 55%;
+		display: flex;
+		flex-direction: column;
+
+		.disclaimer {
+			// width: 100%;
+			// text-align: right;
+			display: block;
+	    text-align: right;
+			width: 100%;
+			position:relative;
+			padding-bottom:0;
+		}
+
+		.featured-menu-item {
+			flex: 1;
+			display: flex;
+			max-width: 100%;
+			padding: 0;
+			border: 1px solid $color_rangitoto_approx;
+			margin: 5px 0;
+			position: relative;
+
+			flex-wrap: wrap;
+			max-height: 49%;
+
+			&.sold_out {
+				background:$broncos_banner;
+				background-size: cover !important;
+				background-position: center;
+
+
+				* {
+					visibility: hidden;
+				}
+				&:before {
+					display: none;
+				}
+			}
+
+			.flex-image-wrapper {
+			    display: flex;
+			    align-items: center;
+					width: 50%;
+					padding-bottom: 10px;
+
+					img {
+						flex: 1;
+						z-index: 1;
+				    width: 100%;
+				    height: 100%;
+				    object-fit: contain;
+					}
+			}
+
+			.featured-item-info {
+				flex: 1;
+				text-align: right;
+        color: $white !important;
+			}
+			.price {
+				@extend %extend_1;
+			}
+			.calories {
+				@extend %extend_1;
+			}
+			&:before {
+				content: '';
+				display: block;
+				height: 100%;
+				background: $color_soya_bean_approx;
+				position: absolute;
+				width: 205px;
+				padding: 0;
+				z-index: 0;
+			}
+		}
+	}
+	.item-text {
+		font-size: 75px;
+		line-height: 84px;
+	}
+	.featured-item-info {
+		padding: 40px 40px 20px 20px;
+		flex-basis: 50%;
+		font-family: $font_1;
+	}
+	.flex-image-wrapper {
+		z-index: 1;
+		padding: 20px 10px 40px 20px;
+		flex: 1;
+	}
+
+	.featured_display_title {
+    line-height: 90px !important;
+		margin-bottom: 20px;
+	}
+
+  .right {
+		width: 45%;
+
+    .list-of-menu-items li.menu_item .menu-item-info-wrapper {
+      * {
+        @extend %extend_1;
+				font-size: 30px !important;
+				line-height: 1.6 !important;
+
+			  color: $white !important;
+      }
+
+			.display-title, .title-text {
+				font-size: 44px !important;
+
+				&.smaller-text {
+					font-size: 35px !important;
+				}
+			}
+
+			.price *, .calories * {
+				font-size: 30px !important;
+			}
+    }
+
+    h1.menu-list-title, .happy-hour-title {
+			margin-bottom: 60px !important;
+    	color: #231600 !important;
+    }
+  }
+
+	.disclaimer {
+  	color: $white !important;
+		font-size: 30px !important;
+		line-height: 1.3;
+  }
+
+	#menu-container {
+		background-size: cover !important;
+	}
+
+}
+
+.layout-013-tlc {
+
+	#content {
+		display: flex;
+	}
+	.featured-ad-container {
+		width: 480px;
+
+		.ad {
+			height: 100%;
+
+			img {
+			 height:100%;
+			 width: 100%;
+			 max-height: 100%;
+			 object-fit: fill;
+			}
+		}
+	}
+	.featured-items-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+	}
+
+	.combo-num {
+		position: absolute;
+		font-family: $font_thick_eveleth;
+		top:10px;
+		right: 10px;
+		font-size: 60px;
+    // line-height: 85px;
+    // padding: 15px 30px 0;
+		color: red;
+		background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/gfx-num-background-tlc.png');
+
+    z-index: 5;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+		display: flex;
+		text-align: center;
+		height: 100px;
+		width: 100px;
+		justify-content: center;
+		align-items: center;
+		padding-top: 15px;
+		padding-right: 5px;
+	}
+
+	#content {
+	    padding: 0;
+	    height: 100%;
+	    position: relative;
+	}
+
+	.featured-menu-item {
+	    width: 740px;
+	    height: 100%;
+	    position: relative;
+			line-height: 1.2 !important;
+
+			.title-top {
+				display: flex;
+
+				.title-line {
+					content: '';
+					display: block;
+					flex: 1;
+					height: 6px;
+					background: $tlc_red;
+					align-self: flex-end;
+					margin-left: 10px;
+					margin-right: 20px;
+					margin-bottom: 10px;
+				}
+			}
+	}
+
+	img.attachment-large.size-large.wp-post-image {
+	    width: 100%;
+	    height: 100%;
+	    object-fit: fill;
+	}
+
+
+
+	div#page {
+	    height: 100%;
+	}
+
+	.featured-items-container {
+		.menu-item-image {
+		    height: 790px;
+		    position: relative;
+		}
+
+		.menu-item-title {
+			font-family: $font_eveleth;
+			height: 300px;
+			background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/gfx-tlc-background.png');
+			background-size: 150% 120%;
+			margin-top: -10px;
+			margin-right:-5px;
+			z-index:5;
+			position:relative;
+	    padding: 40px;
+			color: $white;
+
+			.featured_display_title {
+				font-size:58px;
+				line-height:60px;
+			}
+			.featured_display_subtitle {
+				font-size: 34px;
+				font-family: $font_gotham;
+				line-height: 1.2 !important;
+				text-transform: initial;
+				margin-bottom:10px;
+			}
+
+
+			.item-info {
+		    font-size: 34px;
+		    display: flex;
+
+				.calories {
+			    margin-right: 5px;
+				}
+				.separator {
+					margin:0 10px;
+				}
+				.price {
+			    margin-left: 5px;
+					.price-num {
+				    font-family: $font_eveleth;
+					}
+				}
+			}
+
+
+		}
+	}
+}
+
+.layout-014 {
+	background: #FFFDF4;
+
+	#page, #content {
+		height: 100%;
+	}
+	#content {
+		display: flex;
+	}
+	.left, .right {
+		float: none;
+	}
+	.disclaimer {
+		display: none;
+	}
+	.calories-tag {
+		display: none;
+	}
+
+	.title_price_container {
+		margin-bottom:40px;
+	}
+
+	.menu-logo {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+	}
+	.menu-logo img {
+	    max-width:  400px;
+	}
+
+	.spacer {
+		width: 6px;
+		height: auto;
+		margin: 8% auto 2%;
+		background: $tlc_red;
+	}
+
+	// .list-of-menu-items li.menu_item .menu-item-info-wrapper .item-info {
+	//     min-width: 200px;
+	//     justify-content: space-between;
+	//     display: flex;
+	// }
+
+	.menu-list {
+		.menu-section {
+			flex: 1;
+			width:100%;
+			.menu-list-title, .happy-hour-title {
+				font-size: 80px !important;
+				font-family: $font_eveleth;
+				color: $tlc_red;
+
+				.subtitle {
+					display:none !important;
+				}
+
+				.title-container {
+					&:after {
+						content:'';
+						display: inline-block;
+						height:50px;
+						width:50px;
+						background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/TLC-heart.png');
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+				}
+
+				.calories-tag {
+					display: block;
+					visibility: hidden;
+			    margin-bottom: 20px;
+			    margin-top: -40px;
+					color: #333 !important;
+					font-family: $font_eveleth;
+					font-size: 32px !important;
+					text-align: right;
+				}
+			}
+
+			&:first-child {
+				.menu-list-title, .happy-hour-title {
+					.calories-tag {
+						visibility: visible;
+					}
+				}
+			}
+
+			.item-info {
+				display: flex;
+
+				.separator {
+					margin:0 10px;
+				}
+			}
+		}
+		&.right {
+			height: 100%;
+			display:flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 1.3;
+
+			.item-info *{
+				font-size: 36px !important;
+
+			}
+
+				.price {
+			    padding-right: 20px;
+			    border-right: none !important;
+					margin-right: 20px;
+				}
+				.separator {
+					display: none !important;
+				}
+
+			.menu-section {
+				.display-title, .title-text {
+					font-size: 44px !important;
+					.subtitle {
+						font-size: .6em !important;
+					}
+					&.smaller-text {
+						font-size: 35px !important;
+					}
+				}
+			}
+		}
+		&.left {
+			.menu-section {
+				&:first-child {
+					.menu-list-title, .happy-hour-title {
+						.calories-tag {
+							visibility: hidden;
+						}
+					}
+				}
+				.calories-tag {
+					visibility: visible;
+					display: initial !important;
+				}
+
+				.display-title, .title-text {
+					font-size: 60px !important;
+					margin-bottom: 0px;
+					&.smaller-text {
+						font-size: 35px !important;
+					}
+				}
+				.menu-item-info-wrapper {
+					flex-direction: column;
+				}
+				.list-of-menu-items li.menu_item .menu-item-info-wrapper {
+					* {
+						// display: inline-block !important;
+					}
+					.display-title {
+						.subtitle {
+							display: none !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.list-of-menu-items li.menu_item .menu-item-info-wrapper {
+		* {
+			font-family: $font_eveleth;
+			color: #333 !important;
+		}
+		.description_container {
+			p {
+				font-family:$font_gotham;
+				font-size: 36px !important;
+				margin-bottom:0;
+				text-transform: initial;
+			}
+		}
+	}
+}
+
+.layout-015 {
+
+	#grid-container {
+
+		.quadrant {
+			&.quadrant-basic {
+				.flex-image-wrapper {
+					height: 100%;
+					margin-right: -20px;
+					z-index: 3;
+					max-height: 100% !important;
+					margin-top:0;
+
+					img {
+						max-height: 100%;
+						height: 100%;
+						object-fit: contain;
+						object-position: bottom left;
+					}
+				}
+			}
+			.quadrant-wrap {
+
+				&:before {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 40%;
+					position: absolute;
+					bottom: 0;
+					background: rgba(0,0,0,.2);
+				}
+
+				.item-text {
+					flex-direction: column;
+					&:before {
+						content: '';
+						display: block;
+						position: absolute;
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 0 100px 100px 0;
+						border-color: transparent #2773AC transparent transparent;
+						right: 15px;
+					}
+					.featured_display_title {
+						color: $white;
+						margin-bottom:0;
+
+						.plus-icon {
+							font-family: $font_1;
+							color: $text_orange;
+						}
+					}
+					.featured_display_subtitle {
+						font-size: 80px;
+						color: $white;
+						margin-top:-18px !important;
+					}
+				}
+				.item-info {
+					color: $white;
+				}
+
+
+			}
+		}
+	}
+}
+
+.layout-016 {
+
+	#content, #page {
+		height: 100%;
+	}
+
+	#content {
+		display:flex;
+		flex-direction: column;
+		justify-content: stretch;
+	}
+	.menu-container {
+		position:relative;
+		flex: 1;
+		display: flex;
+		max-height: 1024px;
+
+		&> * {
+			flex: 1;
+		}
+	}
+
+	#top-bottom-half-feature {
+	  display: flex;
+	  flex-direction: column;
+	  // height: 100% !important;
+
+		.quadrant-ad .quadrant-wrap * {
+		    margin-top: 0;
+		    height: 100%;
+		}
+
+		.quadrant-ad .quadrant-wrap img {
+		    object-fit: contain;
+		}
+	}
+
+	.left,.right {
+	    flex: 1;
+	}
+
+	.menu-section {
+		margin-bottom: 0px;
+	}
+
+	.menu-list, #menu-list {
+		border: 1px solid $border_blue;
+		margin: 10px;
+
+		h1.menu-list-title, .happy-hour-title {
+			font-size: 42px !important;
+			line-height:1;
+			margin-bottom:5px;
+			display: flex;
+			align-items:baseline;
+
+			.subtitle {
+				display:inline-block !important;
+				margin-left: 20px;
+				font-size: .7em !important;
+				margin-bottom: 0;
+			}
+			.calories-tag {
+		    display: none;
+			}
+		}
+
+		ul li.menu_item {
+			margin-bottom:5px;
+
+			* {
+				font-size: 36px !important;
+				line-height: initial !important;
+			}
+			h1.display-title, h1.display-title {
+				flex: 6 !important;
+			}
+
+			.price *, .calories * {
+				font-size: $disclaimer-price-size !important;
+			}
+
+			.subtitle {
+				font-size: .85em !important;
+			}
+		}
+	}
+
+	&.tall-list-items {
+		.menu-list, #menu-list {
+			ul li.menu_item {
+				margin-bottom: 10px !important;
+			}
+		}
+	}
+
+	&.carvery, &.fusion, &.philly {
+		.menu-list ul li.menu_item *, #menu-list ul li.menu_item * {
+	    line-height: 1.6 !important;
+		}
+	}
+
+
+
+	.disclaimer {
+		color: $text_blue;
+		font-size: $disclaimer-price-size;
+		position: relative !important;
+
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 4px 0px 0;
+	}
+
+	.quadrant {
+		flex: 1;
+
+		.quadrant-wrap {
+
+			border: 0 !important;
+	  //   display: flex;
+		// 	background:url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/BG-take-home-game-with-background.jpg');
+		// 	background-size:cover;
+		// 	padding: 20px;
+		//
+		// 	.flex-image-wrapper {
+		// 		visibility: hidden;
+		// 	}
+		//
+		// 	.with-item-container {
+		// 	    display: flex;
+		// 	    align-items: flex-end;
+		// 	    position: relative;
+		//
+		// 			.with-item-image {
+		// 				z-index: 5;
+		// 			}
+		//
+		// 			.with-item-info {
+		// 				bottom: 20px;
+		// 				position: absolute;
+		// 		    width: 230px;
+		// 		    text-align: center;
+		// 		    font-family: $font_0;
+		// 		    font-size: 36px;
+		// 		    color: $broncos_navy;
+		//
+		// 				background: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/gfx-souvenir-price-bg.png');
+		// 				background-size: 100% 100%;
+		//
+		// 				.title-container {
+		// 				    padding: 10px;
+		// 				}
+		//
+		// 				.info-container {
+		// 				    display: flex;
+		// 				    justify-content: center;
+		// 				    align-items: center;
+		// 						color: $text_orange;
+		// 				    font-size: 18px;
+		// 				    padding: 10px;
+		//
+		// 						.calories {
+		// 						    margin-right: 10px;
+		// 						}
+		//
+		// 						.price-num {
+		// 						    margin-left: 10px;
+		// 						    font-family: $font_0;
+		// 						}
+		// 				}
+		// 			}
+		//
+		//
+		// 			&:nth-child(even) .with-item-info {
+		// 		    right: -175px;
+		//
+		// 				-webkit-clip-path: polygon(0 100%, 90% 100%, 100% 0%, 0% 0%);
+		// 			  clip-path: polygon(0 100%, 88% 100%, 100% 0%, 0% 0%);
+		//
+		// 				.info-container {
+		// 					background: $broncos_navy;
+		// 				}
+		// 			}
+		//
+		// 			&:nth-child(odd) .with-item-info {
+		// 		    left: -175px;
+		//
+		// 				-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0%, 10% 0%);
+		// 			  clip-path: polygon(0 100%, 100% 100%, 100% 0%, 12% 0%);
+		//
+		// 				.title-container {
+		// 			    background: $broncos_navy;
+		// 					color: $white !important;
+		// 				}
+		// 			}
+		// 	}
+		}
+	}
+
+	.quadrant.quadrant-ad .quadrant-wrap {
+		background: none;
+    height: 100%;
+    align-items: center;
+	}
+}
+
+.layout-017 {
+
+	#grid-container {
+
+		.quadrant {
+
+			.quadrant-wrap {
+				border-color: $border_blue;
+			}
+
+			&.quadrant-with-featured {
+				.quadrant-wrap {
+					&:before {
+						content: '';
+						display: block;
+						width: 100%;
+						height: 50%;
+						position: absolute;
+						bottom: 0;
+						background: rgba(0,0,0,.2);
+					}
+
+					.with-item-container {
+						&:before {
+							content: '';
+							display: block;
+							position: absolute;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 0 100px 100px 0;
+							border-color: transparent #2773AC transparent transparent;
+							right: 0;
+							top:0;
+						}
+
+						border-left: 1px solid $border_blue;
+
+					}
+				}
+			}
+			&.quadrant-with-items {
+				.quadrant-wrap {
+					&:before {
+						content: '';
+						display: block;
+						width: 100%;
+						height: 40%;
+						position: absolute;
+						bottom: 0;
+						background: rgba(0,0,0,.2);
+					}
+				}
+			}
+		}
+	}
+}
+
+.layout-018 {
+
+	#page, #content {
+		overflow: hidden !important;
+	}
+
+	div#page {
+	    height: 100%;
+	}
+
+	.menu-container {
+		position:relative;
+		flex: 1;
+		display: flex;
+		max-height: 1024px;
+
+		&> * {
+			flex: 1;
+		}
+
+		.display-title {
+			flex: 6 !important;
+			font-size: 40px !important;
+			.title-text {
+				font-size: 40px !important;
+				&.smaller-text {
+					font-size: 35px !important;
+				}
+			}
+		}
+		.calories {
+			flex: 2;
+		}
+		.price {
+			flex: 1;
+		}
+	}
+
+	.disclaimer {
+		color: $white;
+		font-size: $disclaimer-price-size;
+		position: relative !important;
+
+
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 4px 0px 0;
+	}
+
+	#content {
+		display:flex;
+		flex-direction: column;
+		justify-content: stretch;
+		flex: 1;
+	}
+	.left, .right {
+		float: none;
+	}
+
+	.right {
+		// margin-bottom: 60px;
+    background: none !important;
+	}
+
+	.menu-list .menu-section .menu-list-title, .happy-hour-title {
+		.calories-tag {
+			display: none;
+		}
+	}
+}
+
+.layout-020 {
+	.disclaimer {
+		display:none;
+	}
+}
+
+
+.calories-tag {
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+// #menu-container {
+// 	background-size: cover !important;
+// }
+//
+// .archive header {
+// 	display: block !important;
+// }
+
+.dark-background {
+	.list-of-menu-items li.menu_item .menu-item-info-wrapper {
+		* {
+			color: $white !important;
+		}
+		.happy-hour-title {
+			color: $text_orange !important;
+		}
+	}
+}
+
+.bar {
+	.calories-tag {
+		// display: none;
+	}
+	.display-title, .title-text {
+		font-size:45px !important;
+		&.smaller-text {
+			font-size: 35px !important;
+		}
+	}
+	.disclaimer {
+    font-size: $disclaimer-price-size; //35px
+    line-height: 1.4;
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 40px;
+	}
+	.menu-list .menu-section .menu-list-title, .happy-hour-title {
+		font-size: 80px !important;
+
+		.subtitle {
+			display: none !important;
+		}
+		.calories-tag {
+			display: none; //was block;
+			visibility: hidden;
+	    margin-bottom: 0px;
+	    margin-top: -40px;
+			text-align: right;
+			font-size: 45px !important;
+			font-family: $font_0;
+			color: $white !important;
+		}
+	}
+	.menu-list .menu-section:first-child .menu-list-title, .happy-hour-title {
+		// display: flex;
+		// justify-content: space-between;
+
+		.calories-tag {
+			visibility: visible;
+		}
+	}
+	.menu-list {
+		.menu_item {
+			font-size: 35px !important; // was 35px
+			.menu-item-info-wrapper {
+				.price, .calories {
+					* {
+						font-size: $disclaimer-price-size !important; //was 35px
+					}
+				}
+			}
+		}
+		.description_container * {
+	    font-size: 30px;
+	    color: lighten($bright_blue, .20) !important;
+	    margin-left: 26px;
+	    line-height: 1.4;
+		}
+	}
+
+	&.white-text .menu-list .description_container * {
+    color:  white !important;
+	}
+
+	&.larger-description .menu-list .description_container * {
+    font-size: 44px;
+    font-style: italic;
+	}
+}
+.bbq {
+
+}
+.blitz-legends-sideline {
+	&.layout-018 {
+		.right {
+	    background-color: rgba(100,00,00, 0.3);
+		}
+		h1.menu-list-title, .happy-hour-title {
+			flex-direction: column;
+		}
+	}
+	&.layout-016{
+		.quadrant .quadrant-wrap {
+			border: 0 !important;
+		}
+	}
+	.quadrant .quadrant-wrap {
+		border-color: #F5AB52 !important;
+	}
+	.quadrant-basic .quadrant-wrap {
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			height: 40%;
+			background: rgba(100,0,0,.3);
+		}
+	}
+
+	.item-info {
+		color: $white !important;
+	}
+	.item-text {
+		.featured_display_subtitle, .plus-icon {
+			color: $white !important;
+		}
+	}
+
+	.menu-list, #menu-list {
+		border-color: #F5AB52 !important;
+
+		h1.menu-list-title, .happy-hour-title {
+			font-size: 49px;
+			color: #F5AB52 !important;
+			display: flex;
+		}
+		ul.list-of-menu-items {
+			li.menu_item{
+				h1.display-title, .menu-item-info-wrapper * {
+					color: $white !important;
+				}
+			}
+		}
+	}
+	.disclaimer {
+		color: $white;
+	}
+}
+.mile-high-pizza {
+	#menu-list, .menu-list {
+		ul.list-of-menu-items {
+			li.menu_item{
+				h1.display-title, .menu-item-info-wrapper * {
+					color: $white !important;
+				}
+			}
+		}
+	}
+	.item-info {
+		color: $white !important;
+	}
+	.disclaimer {
+		color: $white !important;
+	}
+}
+.fan-favs, .fan-favorites {
+	&.layout-018 {
+		.right {
+	    background-color: rgba(00,00,100, 0.1);
+		}
+	}
+	.disclaimer {
+		color: $text_blue !important;
+	}
+	.quadrant .quadrant-wrap .item-text .featured_display_title {
+		color: $text_blue !important;
+	}
+	#menu-list, .menu-list {
+		h1.menu-list-title, .happy-hour-title {
+
+			.subtitle {
+				color: $text_blue;
+			}
+		}
+		ul.list-of-menu-items {
+			li.menu_item{
+				h1.display-title, .menu-item-info-wrapper * {
+					color: $text_blue !important;
+				}
+			}
+		}
+	}
+}
+.carvery {
+	&.layout-016{
+		.quadrant .quadrant-wrap {
+			border: 0 !important;
+		}
+	}
+	.menu-list, #menu-list {
+		border-color: $text_blue !important;
+
+		h1.menu-list-title, .happy-hour-title {
+	    font-size: 49px;
+	    color: $text_blue !important;
+		}
+		ul.list-of-menu-items {
+			li.menu_item{
+				h1.display-title, .menu-item-info-wrapper * {
+					color: $white !important;
+				}
+			}
+		}
+	}
+	.disclaimer {
+		color: $white;
+	}
+	.quadrant .quadrant-wrap {
+		border-color: $text_blue !important;
+	}
+}
+.fusion {
+	&.layout-016{
+		.quadrant .quadrant-wrap {
+			border: 0 !important;
+		}
+	}
+	.menu-list, #menu-list {
+		border-color: #62D99C !important;
+
+		h1.menu-list-title, .happy-hour-title {
+	    font-size: 49px;
+	    color: #62D99C !important;
+		}
+		ul.list-of-menu-items {
+			li.menu_item{
+				h1.display-title, .menu-item-info-wrapper * {
+					color: $white !important;
+				}
+			}
+		}
+	}
+	.disclaimer {
+		color: $white;
+	}
+
+	.quadrant .quadrant-wrap{
+		border-color: #62D99C !important;
+	}
+}
+.market {
+	.quadrant-basic .quadrant-wrap {
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			height: 40%;
+			background: rgba(0,0,0,.3);
+		}
+	}
+
+	.item-info {
+		color: $white !important;
+	}
+}
+.philly {
+	&.layout-016{
+		.quadrant .quadrant-wrap {
+			border: 0 !important;
+		}
+	}
+	.quadrant .quadrant-wrap {
+		.item-text .featured_display_title {
+			color: $white !important;
+		}
+		.item-text .featured_display_subtitle {
+			color: #F39E41 !important;
+		}
+	}
+	.disclaimer {
+		color: $white;
+	}
+	#menu-list, .menu-list {
+		border-color: $white !important;
+		ul.list-of-menu-items {
+			li.menu_item{
+				h1.display-title, .menu-item-info-wrapper * {
+					color: $white !important;
+				}
+			}
+		}
+	}
+}
+.red-zone {
+	.quadrant .quadrant-wrap .item-text .featured_display_title {
+		color: $white !important;
+	}
+	.disclaimer {
+		color: $white !important;
+	}
+}
+.tlc {
+
+}
+
+.bonanno {
+
+	.menu-container {
+		display: flex;
+	}
+
+	h1.menu-list-title, .happy-hour-title {
+    color:  white;
+    font-family: $font_din;
+    background: #A3B6BD;
+		color: #2d2a25;
+    font-size: 140px;
+    line-height: 1;
+    text-align: center;
+
+		clip-path: polygon(0 100%,93% 100%,100% 0, 7% 0);
+		-webkit-clip-path: polygon(0 100%,93% 100%,100% 0, 7% 0);
+
+		.calories-tag, .subtitle {
+	    display: none !important;
+		}
+	}
+	.menu-title-container {
+		h1 {
+		    background: #A3B6BD;
+				clip-path: polygon(0 100%,93% 100%,100% 0, 0% 0);
+				-webkit-clip-path: polygon(0 100%,93% 100%,100% 0, 0% 0);
+				padding:10px;
+				font-size: 100px;
+		    padding-right: 50px;
+		    width: auto;
+		    padding-left: 50px;
+		    text-align: right;
+		    font-family: 'DIN-Bold';
+		}
+	}
+
+	.menu-list, #menu-list {
+
+		&.left {
+			.menu-section {
+				.menu-list-title {
+					margin-bottom: 40px !important;
+				}
+			}
+		}
+
+		.animated.bounceInLeft.item-price.featured_display_price.featured_price.price {
+				display: inline-block;
+		}
+
+		.list-of-menu-items {
+	    padding-top: 30px;
+	    padding-left: 50px;
+	    font-size: 70px !important; //was 80px
+
+			li.menu_item {
+				margin-bottom: 20px; //was 40px
+
+				.menu-item-info-wrapper  {
+					align-items: center;
+
+					.display-title {
+						flex-direction: column;
+						align-items: flex-start;
+
+						.title {
+					    line-height: 1 !important;
+						}
+
+						.subtitle, .highlight {
+							margin-left: 0;
+							font-family: $font_mogra;
+							text-transform: lowercase;
+							font-size: .6em !important;
+						}
+					}
+					* {
+				    font-size: 70px !important; //was 80px
+						font-family: $font_din_condensed;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.blue-arrow {
+	.quadrant.quadrant-with-items .item-text:before, .with-item-info:before {
+		filter: brightness(0.5) sepia(1) saturate(10000%) hue-rotate(200deg);
+		-webkit-filter: brightness(0.5) sepia(1) saturate(10000%) hue-rotate(200deg);
+	}
+}
+.yellow-arrow {
+	.quadrant.quadrant-with-items .item-text:before, .with-item-info:before {
+		filter: brightness(0.61) sepia(1) saturate(810%) hue-rotate(12deg);
+		-webkit-filter: brightness(0.61) sepia(1) saturate(810%) hue-rotate(12deg);
+	}
+}
+.red-arrow {
+	.quadrant.quadrant-with-items .item-text:before, .with-item-info:before {
+		filter: brightness(0.57) sepia(1) saturate(8500%) hue-rotate(10deg);
+		-webkit-filter: brightness(0.57) sepia(1) saturate(8500%) hue-rotate(10deg);
+	}
+}
+.orange-arrow {
+	.quadrant.quadrant-with-items .item-text:before, .with-item-info:before {
+		filter: brightness(0.65) sepia(1) saturate(890%) hue-rotate(-6deg);
+		-webkit-filter: brightness(0.65) sepia(1) saturate(890%) hue-rotate(-6deg);
+	}
+}
+.green-arrow {
+	.quadrant.quadrant-with-items .item-text:before, .with-item-info:before {
+		filter: brightness(0.6) sepia(1) saturate(620%) hue-rotate(111deg);
+		-webkit-filter: brightness(0.6) sepia(1) saturate(620%) hue-rotate(111deg);
+	}
+}
+.brown-arrow {
+	.quadrant.quadrant-with-items .item-text:before, .with-item-info:before {
+		filter: brightness(0.60) sepia(1) saturate(880%) hue-rotate(-7deg);
+		-webkit-filter: brightness(0.60) sepia(1) saturate(880%) hue-rotate(-7deg);
+	}
+}
+
+
+
+.single-column {
+    padding: 40px 100px;
+
+		.menu-list {
+			padding:0;
+
+			.menu_item {
+				margin-bottom:0 !important;
+			}
+		}
+		.menu-list.right {
+		    display: none;
+		}
+
+		&.bar {
+			.menu-list .menu-section .menu-list-title .calories-tag {
+			    font-size: 45px !important; //was 60px
+			    margin-top: -80px;
+			}
+
+			.display-title, .title-text {
+			    font-size: 45px !important;
+			    line-height: 1.8 !important;
+					&.smaller-text {
+						font-size: 35px !important;
+					}
+			}
+
+			&.calories-off {
+				.menu-list {
+					.menu_item {
+						.menu-item-info-wrapper {
+							.price, .calories {
+								* {
+									font-size: 45px !important;
+								}
+							}
+						}
+					}
+
+					.display-title, .title-text {
+					    font-size: 68px !important;
+					    line-height: 1.8 !important;
+							&.smaller-text {
+								font-size: 35px !important;
+							}
+					}
+				}
+			}
+		}
+
+		.menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper * {
+		    font-size: 45px; //was 68px
+		    line-height: 1.6;
+		}
+
+		.price, .calories {
+		    flex: 1;
+		}
+}
+
+.calories-off {
+	.calories-tag {
+    display: none !important;
+	}
+
+	.calories {
+    display: none !important;
+	}
+}
+
+
+.happy-hour-title {
+	position: absolute;
+	display: none;
+
+	&:first-child {
+		display: initial;
+	}
+}
+
+
+
+.layout-022 {
+
+	#content{
+		padding:0;
+	}
+
+	.menu-title-container {
+		align-self: center;
+		position: absolute;
+		left: 0;
+		margin-top: 0%;
+		z-index: 999;
+		width: 28%;
+		top: 43%;
+
+		h1 {
+		    font-size: 100px;
+		}
+
+
+	}
+
+
+
+	.featured-item-wrapper {
+	    height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+			width:110%;
+	}
+
+	.menu-list {
+	    height: 100%;
+	    max-width: 50%;
+	    padding: 0;
+	    margin-left: -5%;
+
+
+			.wp-post-image {
+				flex: 1;
+				flex-basis: 50%;
+				clip-path: polygon(0 100%,82% 100%,100% 0, 17% 0);
+				-webkit-clip-path: polygon(0 100%,82% 100%,100% 0, 17% 0);
+				width: 100%;
+				object-fit: cover;
+			}
+
+			&.right {
+				margin-left: -10%;
+		    width: 65%!important;
+				min-width: 65%;
+		    max-width: 65%;
+		    padding-right: 5%;
+				background: #2d2a25;
+				clip-path: polygon(0% 100%,100% 100%,100% 0, 32% 0);
+				-webkit-clip-path: polygon(0% 100%,100% 100%,100% 0, 32% 0);
+				.menu-item-info-wrapper * {
+					color: white !important;
+				}
+				.featured-item-wrapper {
+					flex-direction:column-reverse;
+				}
+
+				.featured-item-info {
+			    flex: 1;
+			    flex-basis: 50%;
+			    max-width: 65%;
+			    margin-left: 240px;
+			    padding-top: 120px;
+				}
+				.featured_display_title.animated.bounceInLeft {
+				    color: white;
+				    font-family: $font_din_condensed;
+				    display: block;
+				    justify-content: flex-end;
+				    align-items: flex-end;
+				    font-size: 100px !important;
+				    line-height: 1.2 !important;
+				}
+
+
+				.wp-post-image {
+					clip-path: polygon(0 100%, 82% 100%, 100% 0, 15% 0);
+		    -webkit-clip-path: polygon(0 100%, 82% 100%, 100% 0, 15% 0);
+				}
+
+			}
+			.animated.bounceInLeft.item-price.featured_display_price.featured_price.price {
+				margin-left: 40px;
+				font-size: .7em;
+				letter-spacing: 10px;
+			}
+			&.left {
+				.featured-item-info {
+			    flex: 1;
+			    flex-basis: 50%;
+			    max-width: 65%;
+			    margin-left: -380px;
+			    padding-top: 80px;
+				}
+
+				.featured_display_title.animated.bounceInLeft {
+				    color: #2d2a25;
+				    font-family: $font_din_condensed;
+				    display: block;
+				    justify-content: flex-end;
+				    align-items: flex-end;
+				    font-size: 100px !important;
+				    line-height: 1.2 !important;
+				}
+
+			}
+	}
+
+	div#page {
+	    height: 100%;
+	}
+
+	.menu-container {
+		justify-content: stretch;
+    padding-left: 15%;
+	}
+
+	.featured-image img {
+	    height: 100%;
+	    object-fit: cover;
+	}
+
+	.featured-item-info {
+	    flex: 1;
+	    flex-basis: 50%;
+	}
+}
+
+.no-disclaimer {
+	.disclaimer {
+		display: none !important;
+	}
+}
+
+
+
+
+
+
+.cocktail-co header {
+    display: block !important;
+    position: relative;
+}
+
+.cocktail-co .header-inner {
+    background: none !important;
+}
+
+.cocktail-co .header-inner #logo {
+    display: none !important;
+}
+
+.cocktail-co header .header-inner h1 {
+    font-size: 220px;
+    line-height: 240px;
+    color: black;
+    font-family: $font_din_condensed_norm;
+    font-weight: bold;
+}
+
+.cocktail-co .header-wrap, header, header .header-inner #text-container {
+    height: 240px  !important;
+}
+
+.cocktail-co .highlight {
+    font-size:  .7em;
+    display: inline-block;
+    /* border-bottom:5px solid black; */
+    padding-bottom:20px;
+    /* text-decoration: underline; */
+    transform: translateY(-40px);
+}
+
+.cocktail-co .highlight:after {
+    display: block;
+    content:'';
+    height: 15px;
+    background: black;
+    margin-top: -5px;
+    z-index: 999;
+    width: 100%;
+}
+.menu-list-title .title-line {
+	display:none;
+}
+.cocktail-co .menu-list-title .title {
+	display:flex;
+	width: 100%;
+
+	.title-text {
+	    color: black !important;
+	    font-size: 72px;
+	    font-family: $font_clarendon;
+			width: auto;
+			&.smaller-text {
+				font-size: 35px !important;
+			}
+	}
+	.title-line {
+		content: '';
+		display: block;
+		flex: 1;
+		height: 6px;
+		background: black;
+		align-self: flex-end;
+		margin-left: 10px;
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+}
+.cocktail-co .menu-section .menu_item {
+	line-height: 1.2;
+}
+.cocktail-co .subtitle {
+    display: none !important;
+}
+.cocktail-co .menu-list .menu-section .menu-list-title .calories-tag {
+    display: block;
+    text-align: right;
+		color: black;
+		font-size: 30px;
+		font-family:$font_din_norm;
+}
+
+.cocktail-co .calories .calories-tag {
+	display: none !important;
+}
+.cocktail-co .menu-container .menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper {
+	*, .price *, .calories * {
+		color: black !important;
+		font-family: $font_din_condensed_norm;
+		font-size:46px !important;
+	}
+
+	h1.display-title .title-text {
+    font-size: 60px !important;
+    color: black !important;
+		font-family: $font_din_condensed;
+		&.smaller-text {
+			font-size: 35px !important;
+		}
+	}
+}
+
+.calories-num {
+	display:inline;
+}
+
+.menu-section .menu_item {
+	line-height: 1.8;
+}
+
+.bonanno .menu-section .menu_item {
+	line-height: 1.2;
+}
+
+
+.fusion .with-item-info {
+	width:211px !important;
+}
+.quadrant-with-items .with-item-info {
+    width: 211px !important;
+}
+
+
+#layout-016 .disclaimer, #layout-018 .disclaimer {
+    text-align: center;
+    display: inline-block;
+}
+#layout-018.bar .disclaimer {
+	margin-bottom:40px !important;
+}
+
+
+#layout-016 {
+	&.tall-list-items .menu-section .menu_item {
+    margin-bottom: 10px !important;
+	}
+}

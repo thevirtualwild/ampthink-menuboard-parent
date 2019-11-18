@@ -1,0 +1,66 @@
+@import "colors";
+@import "typography";
+@import "structure";
+@import "columns";
+
+
+
+//font imports
+@import "fonts/BigNoodleTitling/font.css";
+@import "fonts/BloggerSans/font.css";
+@import "fonts/Gotham-Book/font.css";
+@import "fonts/Library3AM/font.css";
+@import "fonts/eveleth-thin/font.css";
+@import "fonts/EvelethLight/font.css";
+@import "fonts/Belinda/font.css";
+@import "fonts/DIN/font.css";
+@import "fonts/DIN-Condensed/font.css";
+@import "fonts/DIN-Bold/font.css";
+@import "fonts/DIN-Bold-Condensed/font.css";
+@import "fonts/Mogra/font.css";
+@import "fonts/Clarendon-Bold/font.css";
+
+
+
+
+@font-face{
+	font-family:tungsten;
+	src: url('../../themes/multi-menu-parent/fonts/Tungsten-Semibold.otf');
+}
+
+@font-face {
+	font-family:amPride;
+	src: url('../../themes/multi-menu-parent/fonts/A&M_PRIDE.otf');
+}
+
+@font-face {
+	font-family: moriston;
+	src: url('../../themes/multi-menu-parent/fonts/Moriston-Regular.otf');
+}
+
+@font-face {
+  font-family: roboto;
+  src: url('../../themes/multi-menu-parent/fonts/Roboto-Medium.ttf');
+}
+
+
+
+
+
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+$color-red: #4c0808;
+$color-grey: #1F1F1F;
+$color-white: #e6e4df;
+$color-green: #92923f;
+$primary-font: amPride;
+$secondary-font: tungsten;
+$border-me: 2px solid black;
+
+
+
+$font__main: 'moriston';

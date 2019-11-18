@@ -1,0 +1,67 @@
+$broncos_banner: url('http://broncos.3.229.112.134.xip.io/wp-content/themes/multi-menu-parent/images/broncos-banner.jpg');
+
+.alcohol-disabled {
+  div:not(.alcohol-always-on) {
+
+    .quadrant {
+      &.quadrant-basic, &.quadrant-with-items, &.quadrant-with-featured, &.quadrant-take-home {
+
+        &.alcoholic {
+          .quadrant-wrap {
+            background:$broncos_banner !important;
+            background-size: cover !important;
+
+            background-position: center;
+            * {
+              visibility: hidden;
+            }
+
+            &:before {
+              display:none !important;
+            }
+          }
+        }
+      }
+      &.quadrant-take-home {
+        .with-item-container {
+          &.alcoholic {
+            visibility: hidden;
+          }
+        }
+      }
+      &.quadrant-with-items {
+        .with-item-container {
+          &.alcoholic {
+            display: none !important;
+          }
+          .with-item-info:before {
+            display: none !important;
+          }
+        }
+      }
+    }
+
+    &.layout-012-bbq {
+      .featured-menu-item {
+        &.alcoholic {
+          background:$broncos_banner;
+          background-size: cover !important;
+          background-position: center;
+
+          * {
+            visibility: hidden;
+          }
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #menu-list, .menu-list {
+    	.alcoholic {
+    		display: none !important;
+    	}
+    }
+  }
+}

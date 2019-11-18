@@ -1,0 +1,111 @@
+// .tp-caption {
+// 	position:relative;
+
+// 	span.combo-adjective {
+// 		font-family: cursive !important;
+// 		color: gold !important;
+
+// 		z-index: 20;
+// 	}
+// 	span.combo-name {
+// 	    text-transform: uppercase;
+// 	    font-weight:bold;
+// 	    z-index: 10;
+// 	    padding-bottom:5px;
+// 	}
+// 	div.combo-description {
+// 		text-align:right !important;
+
+// 		ul {
+// 		    list-style: none;
+// 		    margin-left: 0 !important;
+// 		    padding-left: 0 !important;
+// 		}
+// 	}
+
+
+// 	div.1_item-qty {
+// 		display: none !important;
+// 		visibility: hidden;
+// 	}
+// }
+
+
+
+
+
+// .tp-caption.item-info {
+// 	.price {
+// //     	font-size: .8em !important;
+
+// // 		&:before {
+// // 			content: '';
+// // 			display: block;
+// // 			float: left;
+// // 			width: 400px;
+// // 			background: #460908;
+// // 			height: 3px;
+// // 			margin-top: 40px;
+// // 			margin-right: 10px;
+// // 		}
+// 	}
+// }
+//
+//
+// .tp-bgimg.defaultimg::after {
+// 	content:'';
+// 	display:block;
+// 	position:absolute;
+// 	top:0;
+// 	bottom:0;
+// 	left:0;
+// 	right:0;
+// 	background: linear-gradient(90deg, rgba(0,0,0,1), rgba(255,0,0,0) 80%),
+// 		linear-gradient(270deg, rgba(0,0,0,1), rgba(0,0,0,0) 30%),
+// 		linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,255,0) 10%);
+// }
+
+.four-item-slider-top, .contains-slider {
+	.tp-bgimg.defaultimg {
+		width: 1480px !important;
+		height:  560px !important;
+		margin: 0 0 0 auto;
+	}
+
+	.tp-bgimg.defaultimg:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background:linear-gradient(90deg, #000 0%, rgba(0,0,0,0) 40%),
+			linear-gradient(180deg, #000 2%, rgba(0,0,0,0) 50%),linear-gradient(270deg, #000 0%, rgba(0,0,0,0) 30%);
+	}
+
+	.display-title {
+		font-family: amPride;
+		display: inline-block;
+// 		font-size: 88px;
+// 		line-height: 76px;
+	}
+	.display-subtitle {
+		font-family: tungsten;
+		font-size: 46px !important;
+		letter-spacing: 5px !important;
+		line-height: 24px !important;
+	}
+	.price:before {
+		content: '';
+		display: block;
+		height: 3px;
+		background: white;
+		width: 250px;
+		float: left;
+		margin-top: 40px;
+		margin-left: 84px;
+	}
+}
+
+
+#feature-left-snacks-menu .left {
+	width: 738px !important;
+}

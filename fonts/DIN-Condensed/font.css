@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'DIN-Condensed';
+  src: url('D-DINCondensed.eot');
+  src: url('D-DINCondensed.eot?#iefix') format('embedded-opentype'),
+       url('D-DINCondensed.svg#D-DINCondensed') format('svg'),
+       url('D-DINCondensed.ttf') format('truetype'),
+       url('D-DINCondensed.woff') format('woff'),
+       url('D-DINCondensed.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

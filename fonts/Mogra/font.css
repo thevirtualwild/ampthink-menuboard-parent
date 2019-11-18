@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Mogra';
+  src: url('Mogra-Regular.eot');
+  src: url('Mogra-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Mogra-Regular.svg#Mogra-Regular') format('svg'),
+       url('Mogra-Regular.ttf') format('truetype'),
+       url('Mogra-Regular.woff') format('woff'),
+       url('Mogra-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

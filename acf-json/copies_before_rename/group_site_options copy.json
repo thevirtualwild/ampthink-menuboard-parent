@@ -1,0 +1,69 @@
+{
+    "key": "group_5d1b63e4740e0",
+    "title": "Site Options",
+    "fields": [
+        {
+          "key": "field_5b9285813364c",
+          "label": "Price Visibility (Global)",
+          "name": "price_visibility",
+          "type": "select",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "choices": {
+              "Prices Per Board": "Prices Per Board",
+              "Show All Prices": "Show All Prices",
+              "Hide All Prices": "Hide All Prices"
+          },
+          "default_value": [],
+          "allow_null": 0,
+          "multiple": 0,
+          "ui": 0,
+          "return_format": "label",
+          "ajax": 0,
+          "placeholder": ""
+        },
+        {
+            "key": "field_5d1b63e802d3a",
+            "label": "Disable Alcohol",
+            "name": "disable_alcohol",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Alcohol Disabled",
+            "ui_off_text": "Alcohol Enabled"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1562076241
+}
