@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5b4b8d4f539bd",
-            "label": "SKU Number",
+            "label": "Product ID",
             "name": "sku",
             "type": "text",
             "instructions": "",
