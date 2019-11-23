@@ -51,7 +51,7 @@ function menuboard_types_taxonomy() {
             'label' => 'Menu Board Type',  //Display name
             'query_var' => true,
             'rewrite' => array(
-                'slug' => 'menu_boards', // This controls the base slug that will display before each term
+                'slug' => 'menuboard_type', // This controls the base slug that will display before each term
                 'with_front' => false // Don't display the category base before
             )
         )
