@@ -2171,7 +2171,7 @@ header .header-inner #player-container {
 #carouselExampleIndicators .featured_price {
   padding-top: 10px; }
 
-#menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper *, .menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper *, .layout-012-bbq .left .featured-menu-item .price, .layout-012-bbq .left .featured-menu-item .calories, .layout-012-bbq .right .list-of-menu-items li.menu_item .menu-item-info-wrapper * {
+#menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper, .menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper, .layout-012-bbq .left .featured-menu-item .price, .layout-012-bbq .left .featured-menu-item .calories, .layout-012-bbq .right .list-of-menu-items li.menu_item .menu-item-info-wrapper * {
   font-family: "BloggerSans" !important;
   font-size: 28px;
   /*was 45px*/ }
