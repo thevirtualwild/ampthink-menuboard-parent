@@ -119,9 +119,18 @@ get_header();
 
 					get_template_part( 'template-parts/menu-boards/menu-layout/layout-022', '022-specialty-chef' );
 
+				elseif( $layout == 'layout-024' ):
+
+					get_template_part( 'template-parts/menu-boards/menu-layout/layout-024', '024-specialty-chef-3-column' );
+
 				elseif( $layout == 'layout-000' ):
 
 					get_template_part( 'template-parts/menu-boards/menu-layout/layout-000', '000-blank-layout' );
+
+
+				elseif( $layout == 'layout-p-001' ):
+
+					get_template_part( 'template-parts/menu-boards/menu-layout/layout-p-001', 'p-001-basic-portable' );
 
         else:
 

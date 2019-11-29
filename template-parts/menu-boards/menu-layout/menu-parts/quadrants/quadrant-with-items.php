@@ -1,4 +1,4 @@
-<div class="quadrant quadrant-with-items parent-item <?php echo $sku_class ?>">
+<div class="quadrant quadrant-with-items parent-item <?php echo $sku_class ?>" style="order:<?php echo $order; ?>">
   <div class="quadrant-wrap">
     <div class="item-text">
       <div class="background-graphic"></div>

@@ -1,4 +1,4 @@
-<div class="quadrant quadrant-basic <?php echo $sku_class ?>">
+<div class="quadrant quadrant-basic <?php echo $sku_class ?>" style="order:<?php echo $order; ?>">
   <div class="quadrant-wrap">
     <div class="item-text">
         <?php if($display_icon) {

@@ -39,6 +39,8 @@
 					$post = check_alcohol($featured_item);
 				}
 
+				$order = get_sub_field('order');
+
 				setup_postdata( $post );
 
         $display_title = get_field('display_title');
@@ -74,6 +76,9 @@
 				} else {
 					$post = check_alcohol($featured_item);
 				}
+
+				$order = get_sub_field('order');
+
 				setup_postdata( $post );
 
 				$display_title = get_field('display_title');
@@ -94,8 +99,10 @@
 
 		endif;
 
-		if( have_rows('take_home_drinks') ):
+		$order = get_sub_field('take_home_order');
 
+		if( have_rows('take_home_drinks') ):
+			
 			include( locate_template( 'template-parts/menu-boards/menu-layout/menu-parts/quadrants/quadrant-take-home.php', false, false ) );
 
 		endif;

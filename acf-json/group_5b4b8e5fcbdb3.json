@@ -72,6 +72,27 @@
                                     "multiple": 0,
                                     "return_format": "",
                                     "ui": 1
+                                },
+                                {
+                                    "key": "field_5de142a0984a1",
+                                    "label": "Order",
+                                    "name": "order",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": ""
                                 }
                             ]
                         },
@@ -158,6 +179,27 @@
                                             "ui": 1
                                         }
                                     ]
+                                },
+                                {
+                                    "key": "field_5de142bf984a2",
+                                    "label": "order",
+                                    "name": "order",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": ""
                                 }
                             ]
                         },
@@ -176,7 +218,7 @@
                             },
                             "collapsed": "",
                             "min": 0,
-                            "max": 4,
+                            "max": 2,
                             "layout": "table",
                             "button_label": "Add Section",
                             "sub_fields": [
@@ -203,6 +245,27 @@
                                     "ui": 1
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_5de144ee75f03",
+                            "label": "Take Home Order",
+                            "name": "take_home_order",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
                         }
                     ],
                     "min": "",
@@ -1708,6 +1771,213 @@
                             "multiple": 0,
                             "return_format": "object",
                             "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5de1363ea22a9": {
+                    "key": "layout_5de1363ea22a9",
+                    "name": "layout-024",
+                    "label": "024 - Special Guest Chef (3 Column",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5de1363ea22aa",
+                            "label": "Featured Item Left",
+                            "name": "featured_item_left",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "inventory_items"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5de1363ea22ab",
+                            "label": "Featured Item Right",
+                            "name": "featured_item_right",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "inventory_items"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5de1364fa22ac",
+                            "label": "Featured Item Right Two",
+                            "name": "featured_item_right_two",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "inventory_items"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5dd558a57e2a9": {
+                    "key": "layout_5dd558a57e2a9",
+                    "name": "layout-p-001",
+                    "label": "P 001 - Basic Menu List Portable",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5dd558a57e2aa",
+                            "label": "Menu List",
+                            "name": "menu_list",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5d6ffedd53d46",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Section",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5dd558a57e2ab",
+                                    "label": "Section Title",
+                                    "name": "section_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5dd558a57e2ac",
+                                    "label": "Section Subtitle",
+                                    "name": "section_subtitle",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5dd558a57e2ad",
+                                    "label": "List Items",
+                                    "name": "list_items",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 1,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "Add Item",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5dd558a57e2ae",
+                                            "label": "List Item",
+                                            "name": "list_item",
+                                            "type": "post_object",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "post_type": [
+                                                "inventory_items"
+                                            ],
+                                            "taxonomy": "",
+                                            "allow_null": 0,
+                                            "multiple": 0,
+                                            "return_format": "object",
+                                            "ui": 1
+                                        },
+                                        {
+                                            "key": "field_5dd558a57e2af",
+                                            "label": "Show Description?",
+                                            "name": "show_description",
+                                            "type": "true_false",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "message": "",
+                                            "default_value": 0,
+                                            "ui": 0,
+                                            "ui_on_text": "",
+                                            "ui_off_text": ""
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ],
                     "min": "",

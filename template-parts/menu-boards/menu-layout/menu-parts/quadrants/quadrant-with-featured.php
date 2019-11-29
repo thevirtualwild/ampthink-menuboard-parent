@@ -1,4 +1,4 @@
-<div class="quadrant quadrant-with-featured parent-item <?php echo $sku_class ?>">
+<div class="quadrant quadrant-with-featured parent-item <?php echo $sku_class ?>" style="order:<?php echo $order;?>">
   <div class="quadrant-wrap">
     <div class="featured-image-wrapper">
       <?php the_post_thumbnail('large'); ?>

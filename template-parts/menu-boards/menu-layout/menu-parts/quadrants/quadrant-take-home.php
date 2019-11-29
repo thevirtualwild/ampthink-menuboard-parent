@@ -1,4 +1,4 @@
-<div class="quadrant quadrant-take-home <?php echo $sku_class ?>">
+<div class="quadrant quadrant-take-home" style="order:<?php echo $order; ?>">
   <div class="quadrant-wrap">
 
     <div class="flex-image-wrapper" style="order:1;">
