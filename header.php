@@ -86,4 +86,14 @@
  	</style>
  </head>
 
- <body <?php body_class(); ?>>
+<?php
+ if( has_term( 'portable', 'menuboard_type' ) ) {
+  ?>
+    <body id="portable" <?php body_class(); ?>>
+  <?php
+} else {
+  ?>
+    <body <?php body_class(); ?>>
+  <?php
+ }
+ ?>

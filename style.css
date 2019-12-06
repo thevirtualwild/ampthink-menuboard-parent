@@ -3887,63 +3887,63 @@ body.chrome-45 #layout-012-bbq .left .disclaimer {
 html {
   height: 100%; }
 
-html body.postid-1143 {
+html body#portable {
   height: 100%;
   width: 100%; }
-  html body.postid-1143 * {
+  html body#portable * {
     font-family: 'Knockout-Liteweight' !important; }
-  html body.postid-1143 #menu-container {
+  html body#portable #menu-container {
     transform: none !important;
     background-position: bottom center !important;
     background-size: 100% 100% !important; }
-  html body.postid-1143 .menu-board-portable, html body.postid-1143 #page {
+  html body#portable .menu-board-portable, html body#portable #page {
     height: 100%;
     width: 100%; }
-  html body.postid-1143 .portable-menu-container {
+  html body#portable .portable-menu-container {
     text-align: center;
     padding: 40px;
     display: flex;
     flex-direction: column;
     max-height: 90%; }
-    html body.postid-1143 .portable-menu-container .section-title {
+    html body#portable .portable-menu-container .section-title {
       border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       padding: 0 20px 20px;
       margin-bottom: 12px;
       color: white; }
-      html body.postid-1143 .portable-menu-container .section-title .title {
+      html body#portable .portable-menu-container .section-title .title {
         font-size: 2.3em;
         line-height: .7; }
-      html body.postid-1143 .portable-menu-container .section-title .subtitle {
+      html body#portable .portable-menu-container .section-title .subtitle {
         font-size: .7em;
         text-transform: initial;
         font-family: 'Knockout-Featherweight' !important; }
-    html body.postid-1143 .portable-menu-container .menu-list {
+    html body#portable .portable-menu-container .menu-list {
       padding: 0;
       color: white; }
-      html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item {
+      html body#portable .portable-menu-container .menu-list ul li.menu_item {
         font-size: 32px; }
-        html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper {
+        html body#portable .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper {
           font-size: inherit;
           line-height: 1;
           align-items: initial !important;
           padding-top: 6px;
           color: inherit; }
-          html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper h1.display-title, html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper .price {
+          html body#portable .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper h1.display-title, html body#portable .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper .price {
             font-size: 1em !important;
             text-transform: initial;
             font-family: inherit;
             font-weight: bold;
             color: inherit !important; }
-          html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper .price * {
+          html body#portable .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper .price * {
             font-size: inherit !important; }
-        html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .description_container p {
+        html body#portable .portable-menu-container .menu-list ul li.menu_item .description_container p {
           font-size: .6em !important;
           text-align: left;
           text-transform: initial;
           font-family: 'Knockout-Featherweight' !important;
           font-weight: 300;
           color: inherit !important; }
-    html body.postid-1143 .portable-menu-container .disclaimer {
+    html body#portable .portable-menu-container .disclaimer {
       font-size: 2.17vw;
       text-align: center !important;
       width: 100%;

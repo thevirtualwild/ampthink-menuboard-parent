@@ -130,6 +130,9 @@ get_header();
 
 				elseif( $layout == 'layout-p-001' ):
 
+					add_filter( 'body_class', function( $classes ) {
+					    return array_merge( $classes, array( 'portable' ) );
+					} );
 					get_template_part( 'template-parts/menu-boards/menu-layout/layout-p-001', 'p-001-basic-portable' );
 
         else:
