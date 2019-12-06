@@ -3887,8 +3887,8 @@ html body.postid-1143 {
   width: 100%; }
   html body.postid-1143 #menu-container {
     transform: none !important;
-    background-position: bottom center;
-    background-size: 100% !important; }
+    background-position: bottom center !important;
+    background-size: 100% 100% !important; }
   html body.postid-1143 .menu-board-portable, html body.postid-1143 #page {
     height: 100%;
     width: 100%; }
