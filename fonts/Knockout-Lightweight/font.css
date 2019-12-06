@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Knockout-Liteweight';
+  src: url('Knockout-HTF49-Liteweight.eot');
+  src: url('Knockout-HTF49-Liteweight.eot?#iefix') format('embedded-opentype'),
+       url('Knockout-HTF49-Liteweight.svg#Knockout-HTF49-Liteweight') format('svg'),
+       url('Knockout-HTF49-Liteweight.ttf') format('truetype'),
+       url('Knockout-HTF49-Liteweight.woff') format('woff'),
+       url('Knockout-HTF49-Liteweight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

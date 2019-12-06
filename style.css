@@ -54,6 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url(fonts/DIN-Bold-Condensed/font.css);
 @import url(fonts/Mogra/font.css);
 @import url(fonts/Clarendon-Bold/font.css);
+@import url(fonts/Knockout-Liteweight/font.css);
 @font-face {
   font-family: tungsten;
   src: url("../../themes/multi-menu-parent/fonts/Tungsten-Semibold.otf"); }
@@ -3885,6 +3886,8 @@ body.chrome-45 #layout-012-bbq .left .disclaimer {
 html body.postid-1143 {
   height: 100%;
   width: 100%; }
+  html body.postid-1143 * {
+    font-family: 'Knockout-Liteweight'; }
   html body.postid-1143 #menu-container {
     transform: none !important;
     background-position: bottom center !important;
