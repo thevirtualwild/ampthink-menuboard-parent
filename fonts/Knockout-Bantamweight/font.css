@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Knockout-HTF47-Bantamweight';
+  src: url('Knockout-HTF47-Bantamweight.eot');
+  src: url('Knockout-HTF47-Bantamweight.eot?#iefix') format('embedded-opentype'),
+       url('Knockout-HTF47-Bantamweight.svg#Knockout-HTF47-Bantamweight') format('svg'),
+       url('Knockout-HTF47-Bantamweight.ttf') format('truetype'),
+       url('Knockout-HTF47-Bantamweight.woff') format('woff'),
+       url('Knockout-HTF47-Bantamweight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

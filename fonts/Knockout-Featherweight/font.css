@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Knockout-Featherweight';
+  src: url('Knockout-28JuniorFeathrwt.eot');
+  src: url('Knockout-28JuniorFeathrwt.eot?#iefix') format('embedded-opentype'),
+       url('Knockout-28JuniorFeathrwt.svg#Knockout-28JuniorFeathrwt') format('svg'),
+       url('Knockout-28JuniorFeathrwt.ttf') format('truetype'),
+       url('Knockout-28JuniorFeathrwt.woff') format('woff'),
+       url('Knockout-28JuniorFeathrwt.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

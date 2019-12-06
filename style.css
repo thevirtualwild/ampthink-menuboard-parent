@@ -55,6 +55,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url(fonts/Mogra/font.css);
 @import url(fonts/Clarendon-Bold/font.css);
 @import url(fonts/Knockout-Liteweight/font.css);
+@import url(fonts/Knockout-Featherweight/font.css);
 @font-face {
   font-family: tungsten;
   src: url("../../themes/multi-menu-parent/fonts/Tungsten-Semibold.otf"); }
@@ -3883,11 +3884,14 @@ body.chrome-45 #layout-012-bbq .left .disclaimer {
 .alcohol-disabled div:not(.alcohol-always-on) #menu-list .alcoholic, .alcohol-disabled div:not(.alcohol-always-on) .menu-list .alcoholic {
   display: none !important; }
 
+html {
+  height: 100%; }
+
 html body.postid-1143 {
   height: 100%;
   width: 100%; }
   html body.postid-1143 * {
-    font-family: 'Knockout-Liteweight'; }
+    font-family: 'Knockout-Liteweight' !important; }
   html body.postid-1143 #menu-container {
     transform: none !important;
     background-position: bottom center !important;
@@ -3900,22 +3904,24 @@ html body.postid-1143 {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    max-height: 80%; }
+    max-height: 90%; }
     html body.postid-1143 .portable-menu-container .section-title {
-      border-bottom: 1px solid;
-      padding: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 0 20px 20px;
+      margin-bottom: 12px;
       color: white; }
       html body.postid-1143 .portable-menu-container .section-title .title {
-        font-size: 2em;
-        line-height: 1; }
+        font-size: 2.3em;
+        line-height: .7; }
       html body.postid-1143 .portable-menu-container .section-title .subtitle {
-        font-size: .8em;
-        text-transform: initial; }
+        font-size: .7em;
+        text-transform: initial;
+        font-family: 'Knockout-Featherweight' !important; }
     html body.postid-1143 .portable-menu-container .menu-list {
       padding: 0;
       color: white; }
       html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item {
-        font-size: 36px; }
+        font-size: 32px; }
         html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper {
           font-size: inherit;
           line-height: 1;
@@ -3931,18 +3937,20 @@ html body.postid-1143 {
           html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .menu-item-info-wrapper .price * {
             font-size: inherit !important; }
         html body.postid-1143 .portable-menu-container .menu-list ul li.menu_item .description_container p {
-          font-size: .7em !important;
+          font-size: .6em !important;
           text-align: left;
           text-transform: initial;
-          font-family: inherit;
+          font-family: 'Knockout-Featherweight' !important;
           font-weight: 300;
           color: inherit !important; }
     html body.postid-1143 .portable-menu-container .disclaimer {
       font-size: 2.17vw;
       text-align: center !important;
       width: 100%;
-      padding: 20px 0;
+      padding: 20px 0 5px;
       position: relative;
+      font-family: 'Knockout-Featherweight' !important;
+      text-transform: initial !important;
       color: white; }
 
 /*# sourceMappingURL=style.css.map */
