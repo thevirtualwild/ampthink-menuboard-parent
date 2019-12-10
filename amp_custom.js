@@ -57,5 +57,32 @@
     //       location.reload(true);
     //     });
     // });
+
+
+		console.log('window - ' + windowHeight);
+		console.log('window perc - ' + windowHeight * .89);
+
+		var windowPerc = windowHeight * .89;
+
+		var menuHeight = $('.portable-menu-container .menu-list').height();
+		console.log(menuHeight);
+
+		var currentFontstring = $('.menu-list ul li.menu_item').css('font-size');
+		var currentFont = currentFontstring.split('px')[0];
+
+		console.log('check - ' + (menuHeight > windowPerc));
+
+		while (menuHeight > windowPerc) {
+
+			var newFont = currentFont - 0.3;
+			console.log('newfont - ' + currentFont);
+
+			var newFontString = newFont + 'px';
+			$('.menu-list ul li.menu_item').css('font-size', newFontString);
+
+			menuHeight = $('.portable-menu-container .menu-list').height();
+			currentFont = newFont;
+		}
+
 	});
 })(jQuery);
