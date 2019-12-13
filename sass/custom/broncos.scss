@@ -1774,7 +1774,7 @@ body.chrome-45 {
     bottom: 40px;
 	}
 	.menu-list .menu-section .menu-list-title, .happy-hour-title {
-		font-size: 80px !important;
+		// font-size: 80px !important;
 
 		.subtitle {
 			display: none !important;
@@ -2868,5 +2868,61 @@ body.chrome-45 {
 #layout-016 {
 	&.tall-list-items .menu-section .menu_item {
     margin-bottom: 10px !important;
+	}
+}
+
+
+
+
+
+
+
+.menu-list {
+	font-size: 46px;
+
+	.menu-section {
+		font-size: inherit !important;
+
+		.menu-list-title, .happy-hour-title {
+			font-size: 1.2em !important;
+
+			.title-text {
+				font-size: inherit !important;
+			}
+		}
+		.list-of-menu-items {
+			font-size: inherit !important;
+
+			.menu_item {
+				font-size: inherit !important;
+				line-height: 1.2;
+
+				.title_price_container {
+					font-size: inherit !important;
+
+					.menu-item-info-wrapper {
+						font-size: 1em !important;
+
+						.display-title, .price, .calories {
+							font-size: 1em !important;
+
+							 * {
+								 // font-size: inherit !important;
+							 }
+						}
+						.display-title .title-text {
+							font-size: 1em !important;
+						}
+					}
+				}
+				.description_container {
+					font-size: .75em !important;
+
+					* {
+						font-size: inherit !important;
+					}
+				}
+			}
+		}
 	}
 }

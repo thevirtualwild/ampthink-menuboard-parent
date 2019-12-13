@@ -58,31 +58,68 @@
     //     });
     // });
 
+		// var menuContainer = $('.menu-container');
+		// console.log('menucontainer - ' + menuContainer.height());
 
-		console.log('window - ' + windowHeight);
-		console.log('window perc - ' + windowHeight * .89);
+		$('.menu-list').each(function() {
+			listheight = $(this).height()
+			console.log('list height - ' + listheight);
 
-		var windowPerc = windowHeight * .89;
+			var innerheight = 0;
+			$(this).children('.menu-section').each(function() {
+				var sectionheight = $(this).height()
+				console.log('seciton height - ' + sectionheight);
+				innerheight += sectionheight;
+			});
 
-		var menuHeight = $('.portable-menu-container .menu-list').height();
-		console.log(menuHeight);
+			var currentFontstring = $(this).css('font-size');
+			var currentFont = currentFontstring.split('px')[0];
 
-		var currentFontstring = $('.menu-list ul li.menu_item').css('font-size');
-		var currentFont = currentFontstring.split('px')[0];
+			console.log('check - ' + (innerheight > listheight));
 
-		console.log('check - ' + (menuHeight > windowPerc));
+			while (innerheight > listheight) {
 
-		while (menuHeight > windowPerc) {
+				console.log('current - ' + currentFont);
+				var newFont = currentFont - 1;
+				console.log('newfont - ' + newFont);
 
-			var newFont = currentFont - 0.3;
-			console.log('newfont - ' + currentFont);
+				var newFontString = newFont + 'px';
+				$(this).css('font-size', newFontString);
+				console.log($(this).css('font-size'));
 
-			var newFontString = newFont + 'px';
-			$('.menu-list ul li.menu_item').css('font-size', newFontString);
+				innerheight = 0;
+				$(this).children('.menu-section').each(function() {
+					var sectionheight = $(this).height()
+					innerheight += sectionheight;
+				});
+				currentFont = newFont;
 
-			menuHeight = $('.portable-menu-container .menu-list').height();
-			currentFont = newFont;
-		}
+				console.log('check - ' + (innerheight > listheight));
+			}
+		});
+
+
+		// var windowPerc = windowHeight * .89;
+		//
+		// var menuHeight = $('.portable-menu-container .menu-list').height();
+		// console.log(menuHeight);
+		//
+		// var currentFontstring = $('.portable-menu-container .menu-list ul li.menu_item').css('font-size');
+		// var currentFont = currentFontstring.split('px')[0];
+		//
+		// console.log('check - ' + (menuHeight > windowPerc));
+		//
+		// while (menuHeight > windowPerc) {
+		//
+		// 	var newFont = currentFont - 0.3;
+		// 	console.log('newfont - ' + currentFont);
+		//
+		// 	var newFontString = newFont + 'px';
+		// 	$('.portable-menu-container .menu-list ul li.menu_item').css('font-size', newFontString);
+		//
+		// 	menuHeight = $('.portable-menu-container .menu-list').height();
+		// 	currentFont = newFont;
+		// }
 
 	});
 })(jQuery);
