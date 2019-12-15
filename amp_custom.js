@@ -62,12 +62,17 @@
 		// console.log('menucontainer - ' + menuContainer.height());
 
 		$('.menu-list').each(function() {
-			listheight = $(this).height()
+			listheight = $(this).innerheight();
+			listpadding_top = $(this).css('padding-top');
+			listpadding_bot = $(this).css('padding-bottom');
 			console.log('list height - ' + listheight);
+			console.log('list padding - ') + (listpadding_bot+listpadding_top);
+			var maxinnerheight = listheight - listpadding_bot -listpadding_top;
+			console.log('maxheight - ' + maxinnerheight);
 
 			var innerheight = 0;
 			$(this).children('.menu-section').each(function() {
-				var sectionheight = $(this).height()
+				var sectionheight = $(this).innerheight();
 				console.log('seciton height - ' + sectionheight);
 				innerheight += sectionheight;
 			});
@@ -77,7 +82,7 @@
 
 			console.log('check - ' + (innerheight > listheight));
 
-			while (innerheight > listheight) {
+			while (innerheight > maxinnerheight) {
 
 				console.log('current - ' + currentFont);
 				var newFont = currentFont - 1;
