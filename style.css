@@ -2180,6 +2180,11 @@ header .header-inner #player-container {
   flex-direction: column; }
   .dickies #content .flex-container {
     flex: 1; }
+    .dickies #content .flex-container .menu-list {
+      font-size: 8vh; }
+      .dickies #content .flex-container .menu-list ul.list-of-menu-items .description-subtitle {
+        font-size: .75em !important;
+        line-height: 1; }
 
 #menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper,
 .menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper, .layout-012-bbq .left .featured-menu-item .price, .layout-012-bbq .left .featured-menu-item .calories, .layout-012-bbq .right .list-of-menu-items li.menu_item .menu-item-info-wrapper * {

@@ -284,6 +284,17 @@ header .header-inner #player-container {
 
     .flex-container {
       flex: 1;
+
+      .menu-list {
+        font-size: 8vh;
+        
+        ul.list-of-menu-items {
+          .description-subtitle {
+            font-size: .75em !important;
+            line-height: 1;
+          }
+        }
+      }
     }
   }
 }
