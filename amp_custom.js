@@ -63,8 +63,8 @@
 
 		$('.menu-list').each(function() {
 			listheight = $(this).innerHeight();
-			listpadding_top = $(this).css('padding-top');
-			listpadding_bot = $(this).css('padding-bottom');
+			listpadding_top = parseFloat($(this).css('padding-top'));
+			listpadding_bot = parseFloat($(this).css('padding-bottom'));
 			console.log('list height - ' + listheight);
 			console.log('list padding - ') + (listpadding_bot+listpadding_top);
 			var maxinnerheight = listheight - listpadding_bot -listpadding_top;
