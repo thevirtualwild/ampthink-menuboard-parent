@@ -62,7 +62,7 @@
 		// console.log('menucontainer - ' + menuContainer.height());
 
 		$('.menu-list').each(function() {
-			listheight = $(this).innerheight();
+			listheight = $(this).innerHeight();
 			listpadding_top = $(this).css('padding-top');
 			listpadding_bot = $(this).css('padding-bottom');
 			console.log('list height - ' + listheight);
@@ -72,7 +72,7 @@
 
 			var innerheight = 0;
 			$(this).children('.menu-section').each(function() {
-				var sectionheight = $(this).innerheight();
+				var sectionheight = $(this).innerHeight();
 				console.log('seciton height - ' + sectionheight);
 				innerheight += sectionheight;
 			});
