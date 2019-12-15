@@ -65,6 +65,7 @@
 			listheight = $(this).innerHeight();
 			listpadding_top = $(this).css('padding-top');
 			listpadding_bot = $(this).css('padding-bottom');
+			console.log(listpadding_bot);
 			console.log('list height - ' + listheight);
 			console.log('list padding - ' + listpadding_bot);
 			var maxinnerheight = listheight - parseFloat(listpadding_bot) - parseFloat(listpadding_top);
