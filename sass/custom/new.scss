@@ -273,3 +273,17 @@ header .header-inner #player-container {
 #carouselExampleIndicators .featured_price {
     padding-top: 10px;
 }
+
+
+
+/* dickies overwrite for resizing */
+.dickies {
+  #content {
+    display: flex;
+    flex-direction: column;
+
+    .flex-container {
+      flex: 1;
+    }
+  }
+}

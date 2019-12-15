@@ -5,7 +5,7 @@ Github Theme URI: https://github.com/thevirtualwild/multi-menu-parent
 Author: The Virtual Wild
 Author URI: http://thevirtualwild.com
 Description: Parent Theme for Multi Menu Environment created for AmpThink
-Version: 1.0.12.15c_test
+Version: 1.0.12.15d
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: multi-menu-parent
@@ -2173,6 +2173,13 @@ header .header-inner #player-container {
 
 #carouselExampleIndicators .featured_price {
   padding-top: 10px; }
+
+/* dickies overwrite for resizing */
+.dickies #content {
+  display: flex;
+  flex-direction: column; }
+  .dickies #content .flex-container {
+    flex: 1; }
 
 #menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper,
 .menu-list .list-of-menu-items li.menu_item .menu-item-info-wrapper, .layout-012-bbq .left .featured-menu-item .price, .layout-012-bbq .left .featured-menu-item .calories, .layout-012-bbq .right .list-of-menu-items li.menu_item .menu-item-info-wrapper * {
