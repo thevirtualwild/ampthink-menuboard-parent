@@ -63,17 +63,17 @@
 
 		$('.menu-list').each(function() {
 			listheight = $(this).innerHeight();
-			listpadding_top = parseFloat($(this).css('padding-top'));
-			listpadding_bot = parseFloat($(this).css('padding-bottom'));
+			listpadding_top = $(this).css('padding-top');
+			listpadding_bot = $(this).css('padding-bottom');
 			console.log('list height - ' + listheight);
-			console.log('list padding - ') + (listpadding_bot+listpadding_top);
-			var maxinnerheight = listheight - listpadding_bot -listpadding_top;
+			console.log('list padding - ' + listpadding_bot);
+			var maxinnerheight = listheight - parseFloat(listpadding_bot) - parseFloat(listpadding_top);
 			console.log('maxheight - ' + maxinnerheight);
 
 			var innerheight = 0;
 			$(this).children('.menu-section').each(function() {
 				var sectionheight = $(this).innerHeight();
-				console.log('seciton height - ' + sectionheight);
+				console.log('section height - ' + sectionheight);
 				innerheight += sectionheight;
 			});
 
