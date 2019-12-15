@@ -1,10 +1,11 @@
 /*!
 Theme Name: Multi Menu Parent
 Theme URI: http://thevirtualwild.com
+Github Theme URI: https://github.com/thevirtualwild/multi-menu-parent
 Author: The Virtual Wild
 Author URI: http://thevirtualwild.com
 Description: Parent Theme for Multi Menu Environment created for AmpThink
-Version: 1.0.11.29a
+Version: 1.0.12.15a
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: multi-menu-parent
@@ -3192,10 +3193,6 @@ body.chrome-45 #layout-012-bbq .left .disclaimer {
 .dark-background .list-of-menu-items li.menu_item .menu-item-info-wrapper .happy-hour-title {
   color: #ee5624 !important; }
 
-.bar .display-title, .bar .title-text {
-  font-size: 45px !important; }
-  .bar .display-title.smaller-text, .bar .title-text.smaller-text {
-    font-size: 35px !important; }
 .bar .disclaimer {
   font-size: 28px;
   line-height: 1.4;
@@ -3211,24 +3208,20 @@ body.chrome-45 #layout-012-bbq .left .disclaimer {
   margin-bottom: 0px;
   margin-top: -40px;
   text-align: right;
-  font-size: 45px !important;
+  font-size: inherit;
   font-family: "BloggerSans" !important;
   color: #fff !important; }
 .bar .menu-list .menu-section:first-child .menu-list-title .calories-tag, .bar .happy-hour-title .calories-tag {
   visibility: visible; }
-.bar .menu-list .menu_item {
-  font-size: 35px !important; }
-  .bar .menu-list .menu_item .menu-item-info-wrapper .price *, .bar .menu-list .menu_item .menu-item-info-wrapper .calories * {
-    font-size: 28px !important; }
+.bar .menu-list .menu_item .menu-item-info-wrapper .price *, .bar .menu-list .menu_item .menu-item-info-wrapper .calories * {
+  font-size: 28px !important; }
 .bar .menu-list .description_container * {
-  font-size: 30px;
   color: #8d9df5 !important;
   margin-left: 26px;
   line-height: 1.4; }
 .bar.white-text .menu-list .description_container * {
   color: white !important; }
 .bar.larger-description .menu-list .description_container * {
-  font-size: 44px;
   font-style: italic; }
 
 .blitz-legends-sideline.layout-018 .right {

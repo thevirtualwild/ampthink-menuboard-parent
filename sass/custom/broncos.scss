@@ -1760,9 +1760,9 @@ body.chrome-45 {
 		// display: none;
 	}
 	.display-title, .title-text {
-		font-size:45px !important;
+		// font-size:45px !important;
 		&.smaller-text {
-			font-size: 35px !important;
+			// font-size: 35px !important;
 		}
 	}
 	.disclaimer {
@@ -1785,7 +1785,8 @@ body.chrome-45 {
 	    margin-bottom: 0px;
 	    margin-top: -40px;
 			text-align: right;
-			font-size: 45px !important;
+			// font-size: 45px !important;
+			font-size: inherit;
 			font-family: $font_0;
 			color: $white !important;
 		}
@@ -1800,7 +1801,7 @@ body.chrome-45 {
 	}
 	.menu-list {
 		.menu_item {
-			font-size: 35px !important; // was 35px
+			// font-size: 35px !important; // was 35px
 			.menu-item-info-wrapper {
 				.price, .calories {
 					* {
@@ -1810,7 +1811,7 @@ body.chrome-45 {
 			}
 		}
 		.description_container * {
-	    font-size: 30px;
+	    // font-size: 30px;
 	    color: lighten($bright_blue, .20) !important;
 	    margin-left: 26px;
 	    line-height: 1.4;
@@ -1822,7 +1823,7 @@ body.chrome-45 {
 	}
 
 	&.larger-description .menu-list .description_container * {
-    font-size: 44px;
+    // font-size: 44px;
     font-style: italic;
 	}
 }
@@ -2852,7 +2853,7 @@ body.chrome-45 {
 	width:211px !important;
 }
 .quadrant-with-items .with-item-info {
-    width: 211px !important;
+  width: 211px !important;
 }
 
 
