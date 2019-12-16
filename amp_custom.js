@@ -86,11 +86,13 @@
 
 				console.log('current - ' + currentFont);
 				var currentFont_ratio = current_innerheight / parseFloat(currentFont);
-				var potentialFont = max_innerheight / currentFont_ratio;
-				console.log('potential font - ' + potentialFont);
 
 				var newFont = currentFont - 1;
 				console.log('newfont - ' + newFont);
+
+				var potentialFont = max_innerheight / currentFont_ratio;
+				console.log('potential font - ' + potentialFont);
+
 				if (potentialFont <= currentFont ) {
 					newFont = potentialFont;
 				}
