@@ -284,9 +284,11 @@ header .header-inner #player-container {
 
     .flex-container {
       flex: 1;
+      overflow: hidden;
 
       .menu-list {
         font-size: 8vh;
+        max-height:100%;
 
         ul.list-of-menu-items {
           .description-subtitle {
