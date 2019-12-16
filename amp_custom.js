@@ -85,13 +85,16 @@
 			while (current_innerheight > max_innerheight) {
 
 				console.log('current - ' + currentFont);
-				var newFont = currentFont - 1;
-				console.log('newfont - ' + newFont);
 				var currentFont_ratio = current_innerheight / parseFloat(currentFont);
 				var potentialFont = max_innerheight / currentFont_ratio;
 				console.log('potential font - ' + potentialFont);
 
-				var newFontString = potentialFont + 'px';
+				var newFont = currentFont - 1;
+				console.log('newfont - ' + newFont);
+				if (potentialFont <= currentFont ) {
+					newFont = potentialFont;
+				}
+				var newFontString = newFont + 'px';
 				$(this).css('font-size', newFontString);
 				// console.log($(this).css('font-size'));
 
