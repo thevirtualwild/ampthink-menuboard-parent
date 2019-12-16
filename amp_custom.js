@@ -67,39 +67,42 @@
 			listpadding_bot = $(this).css('padding-bottom');
 			console.log('list height - ' + listheight);
 			console.log("padding - " + listpadding_bot + ", " + listpadding_top);
-			var maxinnerheight = listheight - parseFloat(listpadding_bot) - parseFloat(listpadding_top);
-			console.log('maxheight - ' + maxinnerheight);
+			var max_innerheight = listheight - parseFloat(listpadding_bot) - parseFloat(listpadding_top);
+			console.log('maxheight - ' + max_innerheight);
 
-			var innerheight = 0;
+			var current_innerheight = 0;
 			$(this).children('.menu-section').each(function() {
 				var sectionheight = $(this).innerHeight();
 				console.log('section height - ' + sectionheight);
-				innerheight += sectionheight;
+				current_innerheight += sectionheight;
 			});
 
 			var currentFontstring = $(this).css('font-size');
 			var currentFont = currentFontstring.split('px')[0];
 
-			console.log('check - ' + (innerheight > listheight));
+			console.log('check - ' + (current_innerheight > listheight));
 
-			while (innerheight > maxinnerheight) {
+			while (current_innerheight > max_innerheight) {
 
 				console.log('current - ' + currentFont);
 				var newFont = currentFont - 1;
 				console.log('newfont - ' + newFont);
+				var currentFont_ratio = current_innerheight / parseFloat(currentFont);
+				var potentialFont = max_innerheight / currentFont_ratio;
+				console.log('potential font - ' + potentialFont);
 
 				var newFontString = newFont + 'px';
 				$(this).css('font-size', newFontString);
 				console.log($(this).css('font-size'));
 
-				innerheight = 0;
+				current_innerheight = 0;
 				$(this).children('.menu-section').each(function() {
 					var sectionheight = $(this).height()
-					innerheight += sectionheight;
+					current_innerheight += sectionheight;
 				});
 				currentFont = newFont;
 
-				console.log('check - ' + (innerheight > listheight));
+				console.log('check - ' + (current_innerheight > max_innerheight));
 			}
 		});
 
