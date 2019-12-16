@@ -278,6 +278,10 @@ header .header-inner #player-container {
 
 /* dickies overwrite for resizing */
 .dickies {
+  #page {
+    max-height:100%;
+    height:100%;
+  }
   #content {
     display: flex;
     flex-direction: column;
@@ -296,6 +300,13 @@ header .header-inner #player-container {
             line-height: 1;
           }
         }
+      }
+    }
+  }
+  .two-lists-bottom-bar {
+    #content {
+      .bottom-bar{
+        align-self: flex-end;
       }
     }
   }
