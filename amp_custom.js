@@ -91,9 +91,9 @@
 				var potentialFont = max_innerheight / currentFont_ratio;
 				console.log('potential font - ' + potentialFont);
 
-				var newFontString = newFont + 'px';
+				var newFontString = potentialFont + 'px';
 				$(this).css('font-size', newFontString);
-				console.log($(this).css('font-size'));
+				// console.log($(this).css('font-size'));
 
 				current_innerheight = 0;
 				$(this).children('.menu-section').each(function() {
