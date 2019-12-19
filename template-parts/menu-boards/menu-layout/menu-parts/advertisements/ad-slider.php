@@ -4,26 +4,36 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<div id="ad_slider" class="carousel slide" data-ride="carousel">
+<?php $slide_interval = (get_field('slide_interval', 'options') * 1000); ?>
+
+<div id="ad_slider" class="carousel slide" data-ride="carousel" data-interval="<?php echo $slide_interval; ?>">
     <div class="carousel-inner">
         <?php
-          foreach ($ad_list as $ad_slide) {
-            $count += 1;
-            $post = get_post($ad_slide);
-            setup_postdata( $post );
+          if( $ad_list ):
 
-            $carouselitemclass = "carousel-item";
-            if($count == 1) {
-              $carouselitemclass = "carousel-item active";
-            }
-            ?>
-            <div class="<?php echo $carouselitemclass;?> ad">
-              <!-- <img src="..." class="d-block w-100" alt="..."> -->
-              <?php the_post_thumbnail(); ?>
-            </div>
-            <?php
-            wp_reset_postdata();
-          }
+            global $post;
+      			// loop through the rows of data
+      			while ( have_rows('ad_list', 'options') ) : the_row();
+
+              $ad_slide = get_sub_field('ad');
+              $count += 1;
+              $post = get_post($ad_slide);
+              setup_postdata( $post );
+
+              $carouselitemclass = "carousel-item";
+              if($count == 1) {
+                $carouselitemclass = "carousel-item active";
+              }
+              ?>
+              <div class="<?php echo $carouselitemclass;?> ad">
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <?php the_post_thumbnail(); ?>
+              </div>
+              <?php
+              wp_reset_postdata();
+            endwhile;
+
+          endif;
         ?>
     </div>
 </div>

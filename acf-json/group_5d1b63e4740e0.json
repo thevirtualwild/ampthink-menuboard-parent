@@ -132,6 +132,35 @@
                     "ui": 1
                 }
             ]
+        },
+        {
+            "key": "field_5dfbdd5d34810",
+            "label": "Slide Interval",
+            "name": "slide_interval",
+            "type": "number",
+            "instructions": "How long do you want each slide to show before transitioning to the next slide?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5dfbd4e121b2e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "default: 3",
+            "prepend": "",
+            "append": "seconds",
+            "min": "",
+            "max": "",
+            "step": "0.5"
         }
     ],
     "location": [
